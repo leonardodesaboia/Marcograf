@@ -11,7 +11,7 @@ export function Footer() {
     <footer className="cmyk-stripe bg-ink py-14 text-white">
       <Container className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_0.9fr]">
         <div>
-          <img src="/logo_marcograf.png" alt={company.name} className="h-12 w-auto rounded-xl bg-white px-2 py-1" />
+          <img src="/logo_marcograf.png" alt={company.name} className="h-12 w-auto rounded-xl bg-white px-2 py-1" width="160" height="48" />
           <p className="mt-5 max-w-md text-sm leading-7 text-white/75">
             {company.legalName}
             <br />
@@ -41,20 +41,20 @@ export function Footer() {
           <h3 className="text-sm font-semibold uppercase tracking-[0.24em] text-white/60">Contato</h3>
           <div className="mt-5 space-y-4 text-sm text-white/75">
             <a href={company.phoneLink} className="flex items-start gap-3 transition hover:text-white">
-              <Phone className="mt-0.5 h-4 w-4 shrink-0" />
-              <span>{company.phone}</span>
+              <Phone className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+              <span className="break-words">{company.phone}</span>
             </a>
             <a href={`mailto:${company.emails.commercial}`} className="flex items-start gap-3 transition hover:text-white">
-              <Mail className="mt-0.5 h-4 w-4 shrink-0" />
-              <span>{company.emails.commercial}</span>
+              <Mail className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+              <span className="break-all">{company.emails.commercial}</span>
             </a>
             <a href={`mailto:${company.emails.budget}`} className="flex items-start gap-3 transition hover:text-white">
-              <Mail className="mt-0.5 h-4 w-4 shrink-0" />
-              <span>{company.emails.budget}</span>
+              <Mail className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+              <span className="break-all">{company.emails.budget}</span>
             </a>
             <a href={`mailto:${company.emails.prepress}`} className="flex items-start gap-3 transition hover:text-white">
-              <Mail className="mt-0.5 h-4 w-4 shrink-0" />
-              <span>{company.emails.prepress}</span>
+              <Mail className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+              <span className="break-all">{company.emails.prepress}</span>
             </a>
             <a
               href={company.map.searchUrl}
@@ -62,8 +62,8 @@ export function Footer() {
               rel="noreferrer"
               className="flex items-start gap-3 transition hover:text-white"
             >
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
-              <span>{company.address.street}</span>
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+              <span className="break-words">{company.address.street}</span>
             </a>
           </div>
         </div>

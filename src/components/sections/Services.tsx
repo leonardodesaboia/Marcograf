@@ -58,7 +58,7 @@ export function Services() {
 
                 <div>
                   <span className={`mb-4 block h-1 w-14 rounded-full ${accents[index]}`} aria-hidden="true" />
-                  <h3 className="font-display text-[1.9rem] font-semibold text-ink">{service.title}</h3>
+                  <h3 className="text-[1.5rem] font-semibold text-ink sm:text-[1.65rem]">{service.title}</h3>
                 </div>
 
                 <div>

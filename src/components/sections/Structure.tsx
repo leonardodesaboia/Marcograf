@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { company } from "@/data/company";
 import { structure } from "@/data/structure";
 import { sectionIds } from "@/lib/constants";
 import { SectionTitle } from "@/components/ui/SectionTitle";
@@ -23,18 +22,14 @@ export function Structure() {
             <div className="bg-technical-grid absolute inset-0 opacity-[0.08]" aria-hidden="true" />
             <div className="relative p-6 sm:p-7">
               <p className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/55">Visão geral</p>
-              <p className="mt-5 font-display text-[2.4rem] font-semibold leading-tight">
+              <p className="mt-5 text-[2.15rem] font-semibold leading-tight sm:text-[2.3rem]">
                 Estrutura própria para imprimir, provar e finalizar com mais controle de processo.
               </p>
 
-              <div className="mt-7 grid gap-4 sm:grid-cols-2">
-                <div className="rounded-[1.4rem] border border-white/10 bg-white/[0.06] p-4">
-                  <p className="text-sm text-white/62">Área operacional</p>
-                  <p className="mt-2 font-display text-3xl font-semibold">{company.area}</p>
-                </div>
+              <div className="mt-7">
                 <div className="rounded-[1.4rem] border border-white/10 bg-white/[0.06] p-4">
                   <p className="text-sm text-white/62">Cobertura técnica</p>
-                  <p className="mt-2 font-display text-3xl font-semibold">Pré a acabamento</p>
+                  <p className="mt-2 text-3xl font-semibold">Pré a acabamento</p>
                 </div>
               </div>
 
@@ -99,7 +94,7 @@ export function Structure() {
                     <p className="text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-muted">
                       Acabamentos
                     </p>
-                    <h3 className="mt-4 font-display text-[2rem] font-semibold leading-tight text-ink">
+                    <h3 className="mt-4 text-[1.8rem] font-semibold leading-tight text-ink sm:text-[1.95rem]">
                       Recursos para valorizar apresentação, resistência e percepção do material.
                     </h3>
                     <p className="mt-4 text-sm leading-7 text-muted">
@@ -107,7 +102,7 @@ export function Structure() {
                     </p>
                     <div className="mt-6 rounded-[1.4rem] border border-black/10 bg-white p-4">
                       <p className="text-sm text-muted">Quantidade de opções listadas</p>
-                      <p className="mt-2 font-display text-4xl font-semibold text-ink">
+                      <p className="mt-2 text-4xl font-semibold text-ink">
                         {finishingCategory.items.length}
                       </p>
                     </div>

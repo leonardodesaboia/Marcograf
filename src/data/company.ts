@@ -54,16 +54,16 @@ export const company = {
       {
         title: "Missão",
         description:
-          "Transformar ideias e informações em impressos de qualidade, apoiando-se em novas tecnologias, seriedade e excelência no atendimento, visando à satisfação dos clientes, colaboradores e parceiros e contribuindo para o desenvolvimento social.",
+          "Transformar ideias e informações em materiais impressos de qualidade, com tecnologia, seriedade e atenção ao atendimento, buscando a satisfação de clientes, colaboradores e parceiros.",
       },
       {
         title: "Visão",
-        description: "Ser uma empresa modelo para o mercado gráfico.",
+        description: "Ser referência no mercado gráfico pela qualidade, credibilidade e consistência do trabalho realizado.",
       },
       {
         title: "Valores",
         description:
-          "Harmonia, compromisso, qualidade e credibilidade orientam a atuação da Marcograf em suas relações com clientes, colaboradores, fornecedores e parceiros.",
+          "Harmonia, compromisso, qualidade e credibilidade orientam a relação da Marcograf com clientes, colaboradores, fornecedores e parceiros.",
       },
     ],
   },

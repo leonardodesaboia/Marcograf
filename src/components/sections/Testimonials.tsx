@@ -7,6 +7,9 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Section } from "@/components/layout/Section";
 
 export function Testimonials() {
+  const fullStars = Math.floor(company.rating);
+  const partialStar = company.rating - fullStars;
+
   return (
     <Section id={sectionIds.testimonials} className="section-divider">
       <div className="grid gap-12 lg:grid-cols-[0.74fr_1.26fr] lg:gap-16">
@@ -19,16 +22,25 @@ export function Testimonials() {
 
           <div className="cmyk-stripe mt-8 rounded-[2rem] border border-black/10 bg-ink px-6 py-8 text-white shadow-panel sm:px-8">
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/55">Avaliação pública</p>
-            <p className="mt-5 font-display text-6xl font-semibold">{String(company.rating).replace(".", ",")}</p>
-            <p className="mt-2 text-lg text-white/72">de 5 no Google</p>
-            <div className="mt-5 flex items-center gap-1 text-yellow">
-              {Array.from({ length: 5 }).map((_, index) => (
-                <Star key={index} className={`h-5 w-5 ${index === 4 ? "opacity-40" : "fill-current"}`} />
-              ))}
+            <div className="mt-5 flex items-center gap-1 text-yellow" aria-hidden="true">
+              {Array.from({ length: 5 }).map((_, index) => {
+                const fill = index < fullStars ? 1 : index === fullStars ? partialStar : 0;
+
+                return (
+                  <div key={index} className="relative h-5 w-5">
+                    <Star className="absolute inset-0 h-5 w-5 text-white/20" />
+                    <div className="absolute inset-y-0 left-0 overflow-hidden" style={{ width: `${fill * 100}%` }}>
+                      <Star className="h-5 w-5 fill-current text-yellow" />
+                    </div>
+                  </div>
+                );
+              })}
             </div>
-            <p className="mt-6 text-sm leading-7 text-white/72">
-              {company.reviews} avaliações públicas reforçando confiança, qualidade e compromisso com a entrega.
+            <p className="mt-4 text-4xl font-semibold">
+              {String(company.rating).replace(".", ",")}
+              <span className="ml-1 text-lg font-normal text-white/55">/5</span>
             </p>
+            <p className="mt-2 text-sm text-white/72">{company.reviews} avaliações no Google</p>
           </div>
         </div>
 
