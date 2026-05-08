@@ -10,18 +10,24 @@ export function FinalCTA() {
 
   return (
     <Section className="pb-24 pt-0">
-      <div className="cmyk-stripe overflow-hidden rounded-[2.25rem] border border-black/10 bg-ink px-6 py-10 text-white shadow-panel sm:px-10 sm:py-14">
+      <div className="overflow-hidden rounded-[2rem] border border-ink/10 bg-editorial-paper px-5 py-8 text-ink shadow-soft sm:rounded-[2.25rem] sm:px-10 sm:py-14">
+        <div className="mb-6 h-1 rounded-full bg-[linear-gradient(90deg,rgba(111,123,73,0.92)_0_26%,rgba(138,67,81,0.92)_26%_54%,rgba(184,139,52,0.94)_54%_78%,rgba(181,91,44,0.94)_78%_100%)]" aria-hidden="true" />
         <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-2xl">
-            <h2 className="mt-4 font-display text-balance text-3xl font-semibold tracking-tight sm:text-4xl">{company.finalCta.title}</h2>
-            <p className="mt-4 text-lg leading-8 text-white/75">{company.finalCta.description}</p>
+            <h2 className="mt-4 font-display text-balance text-[1.95rem] font-semibold leading-tight tracking-tight sm:text-4xl">{company.finalCta.title}</h2>
+            <p className="mt-4 text-[1rem] leading-7 text-muted sm:text-lg sm:leading-8">{company.finalCta.description}</p>
           </div>
 
-          <div className="flex flex-col gap-4 sm:flex-row">
-            <Button size="lg" onClick={scrollToSection(`#${sectionIds.contact}`)} className="border-white/20 bg-white text-ink hover:bg-paper">
+          <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
+            <Button
+              size="lg"
+              fullWidth
+              onClick={scrollToSection(`#${sectionIds.contact}`)}
+              className="border-ink bg-ink text-paper hover:border-brand-strong hover:bg-brand-strong sm:w-auto"
+            >
               Solicitar orçamento
             </Button>
-            <Button size="lg" href={company.phoneLink} variant="secondary" className="border-white/20 bg-transparent text-white hover:bg-white/10 hover:text-white">
+            <Button size="lg" fullWidth href={company.phoneLink} variant="secondary" className="sm:w-auto">
               <Phone className="mr-2 h-4 w-4" />
               Ligar para a Marcograf
             </Button>

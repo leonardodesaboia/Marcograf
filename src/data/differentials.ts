@@ -1,26 +1,26 @@
 export const differentials = [
   {
     title: "25+ anos de experiência",
-    description: "Uma trajetória consolidada no mercado gráfico, com histórico de qualidade e confiança.",
+    description: "Histórico consistente no mercado gráfico.",
   },
   {
     title: "Estrutura própria",
-    description: "Área de 2.080 m² e parque gráfico preparado para atender diferentes tipos de projetos.",
+    description: "Parque gráfico preparado para diferentes demandas.",
   },
   {
     title: "Variedade de soluções",
-    description: "Serviços editoriais, embalagens, publicidade, papelaria e comunicação visual em um só lugar.",
+    description: "Editorial, embalagens, publicidade, papelaria e comunicação visual.",
   },
   {
     title: "Qualidade de acabamento",
-    description: "Processos de impressão e acabamento pensados para entregar materiais com excelente apresentação.",
+    description: "Mais cuidado na apresentação final do material.",
   },
   {
     title: "Compromisso com o cliente",
-    description: "Atuação baseada em seriedade, transparência e foco na satisfação de clientes, parceiros e colaboradores.",
+    description: "Atendimento com seriedade, clareza e compromisso.",
   },
   {
     title: "Atendimento em Fortaleza",
-    description: "Localização em Fortaleza/CE, com atendimento para demandas gráficas e projetos personalizados.",
+    description: "Base local para atendimento e acompanhamento próximo.",
   },
 ] as const;

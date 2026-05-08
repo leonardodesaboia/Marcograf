@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Star } from "lucide-react";
+import { Quote, Star } from "lucide-react";
 import { company } from "@/data/company";
 import { testimonials } from "@/data/testimonials";
 import { sectionIds } from "@/lib/constants";
@@ -17,11 +17,11 @@ export function Testimonials() {
           <SectionTitle
             eyebrow="Avaliações"
             title="Quem conhece, recomenda"
-            description="A Marcograf possui avaliação 4,7 no Google, com clientes destacando qualidade, confiança, variedade de serviços e compromisso com prazos."
+            description="Clientes destacam qualidade, confiança e compromisso com o prazo."
           />
 
-          <div className="cmyk-stripe mt-8 rounded-[2rem] border border-black/10 bg-ink px-6 py-8 text-white shadow-panel sm:px-8">
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-white/55">Avaliação pública</p>
+          <div className="cmyk-stripe hero-aura mt-8 rounded-[2rem] border border-white/12 px-5 py-7 text-white shadow-panel sm:px-8 sm:py-8">
+            <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-white/78 sm:tracking-[0.26em]">Avaliação pública</p>
             <div className="mt-5 flex items-center gap-1 text-yellow" aria-hidden="true">
               {Array.from({ length: 5 }).map((_, index) => {
                 const fill = index < fullStars ? 1 : index === fullStars ? partialStar : 0;
@@ -38,9 +38,9 @@ export function Testimonials() {
             </div>
             <p className="mt-4 text-4xl font-semibold">
               {String(company.rating).replace(".", ",")}
-              <span className="ml-1 text-lg font-normal text-white/55">/5</span>
+              <span className="ml-1 text-lg font-normal text-white/72">/5</span>
             </p>
-            <p className="mt-2 text-sm text-white/72">{company.reviews} avaliações no Google</p>
+            <p className="mt-2 text-[0.98rem] text-white/82">{company.reviews} avaliações no Google</p>
           </div>
         </div>
 
@@ -55,16 +55,18 @@ export function Testimonials() {
               className={index === 0 ? "md:col-span-2" : undefined}
             >
               <div
-                className={`h-full rounded-[1.75rem] border border-black/10 px-5 py-6 shadow-soft ${
-                  index === 0 ? "bg-editorial-paper" : "bg-white"
+                className={`h-full rounded-[1.75rem] border border-ink/10 px-5 py-6 shadow-soft ${
+                  index === 0 ? "bg-editorial-paper" : "bg-surface"
                 }`}
               >
-                <p className="text-sm leading-7 text-graphite">{item.text}</p>
-                <div className="mt-5 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-                  <p className="text-sm font-semibold text-ink">{item.name}</p>
-                  <span className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-muted">
-                    Avaliação pública
-                  </span>
+                <Quote className="h-5 w-5 text-brand/75" aria-hidden="true" />
+                <p className="text-[0.98rem] leading-7 text-graphite">{item.text}</p>
+                <div className="mt-5 flex flex-col gap-2 border-t border-ink/8 pt-4 sm:flex-row sm:items-center sm:justify-between">
+                  <p className="text-base font-semibold text-ink">{item.name}</p>
+                  <div className="inline-flex items-center gap-2 text-[0.82rem] font-semibold uppercase tracking-[0.14em] text-brand sm:tracking-[0.2em]">
+                    <Star className="h-3.5 w-3.5 fill-current" aria-hidden="true" />
+                    Google
+                  </div>
                 </div>
               </div>
             </motion.article>

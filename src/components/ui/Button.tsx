@@ -23,20 +23,20 @@ type ButtonProps = AnchorProps | NativeButtonProps;
 
 const variants = {
   primary:
-    "border border-ink bg-ink text-white shadow-soft hover:bg-graphite focus-visible:ring-ink",
+    "border border-brand-strong bg-brand-strong text-white shadow-glow hover:border-ink hover:bg-ink focus-visible:ring-brand",
   secondary:
-    "border border-border bg-white text-ink hover:border-ink hover:bg-paper focus-visible:ring-ink",
-  ghost: "text-ink hover:bg-black/5 focus-visible:ring-ink",
+    "border border-border bg-surface text-ink hover:border-ink hover:bg-paper focus-visible:ring-ink",
+  ghost: "text-ink hover:bg-ink/5 focus-visible:ring-ink",
 } as const;
 
 const sizes = {
   sm: "min-h-10 px-4 text-sm",
   md: "min-h-11 px-5 text-sm sm:text-[0.95rem]",
-  lg: "min-h-12 px-6 text-base",
+  lg: "min-h-[3.35rem] px-6 text-[0.98rem]",
 } as const;
 
 const sharedClassName =
-  "inline-flex items-center justify-center rounded-xl font-semibold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60";
+  "inline-flex items-center justify-center rounded-full font-semibold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60";
 
 export function Button({
   children,

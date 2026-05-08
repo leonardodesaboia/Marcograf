@@ -1,37 +1,48 @@
 import { motion } from "framer-motion";
 import { company } from "@/data/company";
 import { sectionIds } from "@/lib/constants";
-import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Section } from "@/components/layout/Section";
 
 export function Process() {
   return (
-    <Section id={sectionIds.process} className="section-divider bg-paper">
-      <SectionTitle eyebrow="Processo" title={company.process.title} description={company.process.subtitle} align="center" />
+    <Section id={sectionIds.process} className="section-divider">
+      <div className="hero-aura overflow-hidden rounded-[2.1rem] border border-white/12 px-5 py-8 text-white shadow-panel sm:rounded-[2.3rem] sm:px-8 sm:py-10 lg:px-10">
+        <div className="mx-auto max-w-3xl text-center">
+          <span className="inline-flex items-center gap-2.5 text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-white/80 sm:gap-3 sm:tracking-[0.28em]">
+            <span className="h-px w-10 bg-brand" />
+            Processo
+            <span className="h-px w-10 bg-white/15" />
+          </span>
+          <h2 className="mt-4 font-display text-balance text-[1.95rem] font-semibold leading-tight tracking-tight text-white sm:mt-5 sm:text-[2.85rem]">
+            {company.process.title}
+          </h2>
+          <p className="mt-4 text-[1rem] leading-7 text-white/84 sm:text-[1.05rem] sm:leading-8">{company.process.subtitle}</p>
+        </div>
 
-      <div className="mt-12 grid gap-5 lg:grid-cols-4 lg:gap-4">
-        {company.process.steps.map((step, index) => (
-          <motion.div
-            key={step.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.35, delay: index * 0.06 }}
-            className="relative"
-          >
-            {index < company.process.steps.length - 1 ? (
-              <span className="absolute left-6 top-14 h-[calc(100%-3.5rem)] w-px bg-black/10 lg:left-[calc(100%-1rem)] lg:top-6 lg:h-px lg:w-8" aria-hidden="true" />
-            ) : null}
+        <div className="mt-12 grid gap-5 lg:grid-cols-4 lg:gap-4">
+          {company.process.steps.map((step, index) => (
+            <motion.div
+              key={step.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.35, delay: index * 0.06 }}
+              className="relative"
+            >
+              {index < company.process.steps.length - 1 ? (
+                <span className="absolute left-6 top-14 h-[calc(100%-3.5rem)] w-px bg-white/12 lg:left-[calc(100%-1rem)] lg:top-6 lg:h-px lg:w-8" aria-hidden="true" />
+              ) : null}
 
-            <div className="relative h-full rounded-[1.75rem] border border-black/10 bg-white p-6 shadow-soft">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-black/10 bg-editorial-paper text-lg font-semibold text-ink">
-                0{index + 1}
+              <div className="relative h-full rounded-[1.75rem] border border-white/10 bg-[rgba(255,248,238,0.12)] p-5 shadow-soft sm:p-6">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-brand/20 bg-brand/14 text-lg font-semibold text-white">
+                  0{index + 1}
+                </div>
+                <h3 className="mt-6 text-xl font-semibold text-white">{step.title}</h3>
+                <p className="mt-3 text-[0.98rem] leading-7 text-white/88">{step.description}</p>
               </div>
-              <h3 className="mt-6 text-xl font-semibold text-ink">{step.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-muted">{step.description}</p>
-            </div>
-          </motion.div>
-        ))}
+            </motion.div>
+          ))}
+        </div>
       </div>
     </Section>
   );

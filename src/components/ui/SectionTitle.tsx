@@ -15,19 +15,19 @@ export function SectionTitle({ eyebrow, title, description, align = "left" }: Se
       {eyebrow ? (
         <span
           className={cn(
-            "mb-5 inline-flex items-center gap-3 text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-muted",
+            "mb-4 inline-flex items-center gap-2.5 text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-muted sm:mb-5 sm:gap-3 sm:tracking-[0.28em]",
             centered && "justify-center",
           )}
         >
-          <span className="h-px w-10 bg-cyan" />
+          <span className="h-px w-10 bg-brand" />
           {eyebrow}
-          <span className="h-px w-10 bg-black/12" />
+          <span className="h-px w-10 bg-ink/12" />
         </span>
       ) : null}
-      <h2 className="font-display text-balance text-[2rem] font-semibold tracking-tight text-ink sm:text-[2.5rem]">
+      <h2 className="font-display text-balance text-[1.95rem] font-semibold leading-[1.02] tracking-tight text-ink sm:text-[2.85rem]">
         {title}
       </h2>
-      {description ? <p className="mt-4 max-w-2xl text-base leading-8 text-muted sm:text-lg">{description}</p> : null}
+      {description ? <p className="mt-4 max-w-2xl text-[0.98rem] leading-7 text-muted sm:text-[1.05rem] sm:leading-8">{description}</p> : null}
     </div>
   );
 }

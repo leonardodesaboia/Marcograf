@@ -2,31 +2,31 @@ export const services = [
   {
     title: "Editorial",
     description:
-      "Produção de livros, revistas, catálogos, apostilas, manuais e materiais editoriais com acabamento profissional.",
+      "Livros, revistas, catálogos, apostilas e manuais.",
     items: ["Livros", "Revistas", "Catálogos", "Apostilas", "Manuais"],
   },
   {
     title: "Rótulos e embalagens",
     description:
-      "Soluções para sacolas, caixas, rótulos, tags e materiais que valorizam a apresentação dos seus produtos.",
+      "Caixas, sacolas, rótulos e peças para apresentação de produto.",
     items: ["Sacolas", "Caixas", "Rótulos", "Tags", "Embalagens personalizadas"],
   },
   {
     title: "Comunicação visual",
     description:
-      "Banners, adesivos, totens, outdoors e fachadas para fortalecer a presença da sua marca.",
+      "Banners, adesivos, totens, outdoors e fachadas.",
     items: ["Banners", "Adesivos", "Totens", "Outdoor", "Fachadas"],
   },
   {
     title: "Publicidade",
     description:
-      "Materiais promocionais, impressos comerciais e peças gráficas para campanhas, eventos e divulgação.",
+      "Materiais promocionais e peças para campanhas, eventos e divulgação.",
     items: ["Materiais promocionais", "Impressos comerciais", "Peças para divulgação"],
   },
   {
     title: "Papelaria",
     description:
-      "Cartões, blocos, envelopes, pastas, timbrados, receituários e materiais corporativos personalizados.",
+      "Cartões, blocos, envelopes, pastas e materiais corporativos.",
     items: ["Cartões", "Blocos", "Envelopes", "Pastas", "Timbrados"],
   },
 ] as const;

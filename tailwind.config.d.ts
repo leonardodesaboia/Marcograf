@@ -7,7 +7,11 @@ declare const _default: {
                 graphite: string;
                 muted: string;
                 paper: string;
+                surface: string;
+                panel: string;
                 border: string;
+                brand: string;
+                "brand-strong": string;
                 cyan: string;
                 magenta: string;
                 yellow: string;
@@ -16,6 +20,7 @@ declare const _default: {
             boxShadow: {
                 soft: string;
                 panel: string;
+                glow: string;
             };
             backgroundImage: {
                 mesh: string;

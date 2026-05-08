@@ -3,7 +3,10 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { About } from "@/components/sections/About";
 import { Contact } from "@/components/sections/Contact";
+import { Differentials } from "@/components/sections/Differentials";
+import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Hero } from "@/components/sections/Hero";
+import { Process } from "@/components/sections/Process";
 import { Services } from "@/components/sections/Services";
 import { Structure } from "@/components/sections/Structure";
 import { Testimonials } from "@/components/sections/Testimonials";
@@ -37,10 +40,13 @@ export function Home() {
         <main>
           <Hero />
           <About />
+          <Differentials />
           <Services />
+          <Process />
           <Structure />
           <Testimonials />
           <Contact />
+          <FinalCTA />
         </main>
         <WhatsAppButton />
         <Footer />

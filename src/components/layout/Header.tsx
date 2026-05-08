@@ -30,69 +30,84 @@ export function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 border-b border-black/5 transition duration-200",
-        scrolled ? "bg-white/92 shadow-[0_12px_32px_rgba(17,17,17,0.06)] backdrop-blur" : "bg-white/72 backdrop-blur",
+        "sticky top-0 z-50 bg-surface/72 transition duration-200 backdrop-blur-xl",
+        scrolled ? "shadow-[0_18px_40px_rgba(23,20,22,0.08)]" : "shadow-[0_8px_24px_rgba(23,20,22,0.04)]",
       )}
     >
-      <div className="cmyk-stripe absolute inset-x-0 top-0 hidden h-[3px] sm:block" aria-hidden="true" />
-
-      <Container className="flex min-h-[4.75rem] items-center justify-between gap-4 pt-[3px]">
-        <a
-          href={`#${sectionIds.home}`}
-          onClick={handleNavigate(`#${sectionIds.home}`)}
-          className="flex items-center gap-3"
-          aria-label={`Voltar ao início - ${company.name}`}
+      <Container className="pt-4">
+        <div
+          className={cn(
+            "flex min-h-[4.85rem] items-center justify-between gap-4 rounded-full border px-4 transition duration-200 sm:px-5",
+            scrolled
+              ? "border-ink/10 bg-surface/96 shadow-soft"
+              : "border-ink/10 bg-surface/92 shadow-[0_12px_34px_rgba(23,20,22,0.06)]",
+          )}
         >
-          <img src="/logo_marcograf.png" alt={company.name} className="h-11 w-auto" />
-        </a>
+          <a
+            href={`#${sectionIds.home}`}
+            onClick={handleNavigate(`#${sectionIds.home}`)}
+            className="flex items-center gap-3"
+            aria-label={`Voltar ao início - ${company.name}`}
+          >
+            <img src="/logo_marcograf.png" alt={company.name} className="h-11 w-auto" />
+            <div className="hidden min-[1180px]:block">
+              <p className="text-sm font-semibold text-ink">Marcograf</p>
+              <p className="text-xs uppercase tracking-[0.24em] text-muted">Fortaleza • 25+ anos</p>
+            </div>
+          </a>
 
-        <nav className="hidden items-center gap-7 md:flex" aria-label="Navegação principal">
-          {navigation.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              onClick={handleNavigate(item.href)}
-              className="text-sm font-medium tracking-[0.08em] text-graphite transition hover:text-ink"
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
-
-        <div className="hidden md:block">
-          <Button size="sm" variant="secondary" onClick={handleNavigate(`#${sectionIds.contact}`)}>
-            Solicitar orçamento
-          </Button>
-        </div>
-
-        <button
-          type="button"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-white text-ink md:hidden"
-          onClick={() => setOpen((value) => !value)}
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-          aria-label={open ? "Fechar menu" : "Abrir menu"}
-        >
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
-      </Container>
-
-      {open ? (
-        <div id="mobile-menu" className="border-t border-black/5 bg-white/95 backdrop-blur md:hidden">
-          <Container className="flex flex-col gap-4 py-5">
+          <nav className="hidden items-center gap-2 rounded-full border border-ink/10 bg-white/96 px-2 py-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.5)] md:flex" aria-label="Navegação principal">
             {navigation.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={handleNavigate(item.href)}
-                className="text-base font-medium text-graphite"
+                className="rounded-full px-4 py-2 text-sm font-medium tracking-[0.02em] text-graphite transition hover:bg-paper hover:text-ink"
               >
                 {item.label}
               </a>
             ))}
-            <Button fullWidth onClick={handleNavigate(`#${sectionIds.contact}`)}>
+          </nav>
+
+          <div className="hidden md:block">
+            <Button size="sm" variant="secondary" onClick={handleNavigate(`#${sectionIds.contact}`)}>
               Solicitar orçamento
             </Button>
+          </div>
+
+          <button
+            type="button"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-ink md:hidden"
+            onClick={() => setOpen((value) => !value)}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            aria-label={open ? "Fechar menu" : "Abrir menu"}
+          >
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
+      </Container>
+
+      {open ? (
+        <div id="mobile-menu" className="md:hidden">
+          <Container className="pt-3">
+            <div className="rounded-[2rem] border border-ink/8 bg-surface/96 p-5 shadow-soft backdrop-blur-xl">
+              <div className="flex flex-col gap-4">
+                {navigation.map((item) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    onClick={handleNavigate(item.href)}
+                    className="rounded-2xl border border-transparent bg-paper/60 px-4 py-3 text-base font-medium text-graphite"
+                  >
+                    {item.label}
+                  </a>
+                ))}
+                <Button fullWidth onClick={handleNavigate(`#${sectionIds.contact}`)}>
+                  Solicitar orçamento
+                </Button>
+              </div>
+            </div>
           </Container>
         </div>
       ) : null}

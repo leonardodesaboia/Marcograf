@@ -8,46 +8,55 @@ import { Section } from "@/components/layout/Section";
 export function About() {
   return (
     <Section id={sectionIds.about} className="section-divider">
-      <SectionTitle eyebrow="Sobre" title={company.about.title} description={company.tagline} />
+      <div className="grid gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:gap-16">
+        <div className="lg:sticky lg:top-28 lg:self-start">
+          <SectionTitle eyebrow="Sobre" title={company.about.title} description={company.tagline} />
+          <p className="mt-7 text-[1rem] leading-7 text-muted sm:mt-8 sm:text-lg sm:leading-8">{company.about.paragraphs[0]}</p>
 
-      <div className="mt-12 grid gap-8 lg:grid-cols-[1.06fr_0.94fr] lg:gap-12">
-        <div>
-          <p className="text-base leading-8 text-muted sm:text-lg">{company.about.paragraphs[0]}</p>
+          <div className="hero-aura mt-8 rounded-[1.8rem] border border-white/12 p-6 text-white shadow-panel">
+            <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-white/78 sm:tracking-[0.24em]">Posicionamento</p>
+            <p className="mt-3 text-[1.65rem] font-semibold leading-tight sm:text-2xl">
+              Produção gráfica com mais critério técnico e menos improviso.
+            </p>
+          </div>
+        </div>
 
-          <div className="mt-8 rounded-[1.8rem] border border-black/10 bg-editorial-paper p-5 shadow-soft sm:p-6">
-            <div className="grid gap-3 sm:grid-cols-2">
+        <div className="space-y-6">
+          <div className="rounded-[1.9rem] border border-ink/10 bg-editorial-paper p-5 shadow-soft sm:p-6">
+            <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-muted sm:tracking-[0.24em]">Pontos de força</p>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
               {differentials.slice(2, 6).map((item, index) => (
-                <div key={item.title} className="rounded-[1.1rem] border border-black/10 bg-white px-4 py-3.5">
-                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-muted">0{index + 1}</p>
-                  <h3 className="mt-1.5 text-sm font-semibold text-ink">{item.title}</h3>
-                  <p className="mt-1.5 text-sm leading-6 text-muted">{item.description}</p>
+                <div key={item.title} className="rounded-[1.2rem] border border-ink/10 bg-surface px-4 py-4">
+                  <p className="text-[0.76rem] font-semibold uppercase tracking-[0.16em] text-brand sm:tracking-[0.24em]">0{index + 1}</p>
+                  <h3 className="mt-2 text-base font-semibold text-ink">{item.title}</h3>
+                  <p className="mt-2 text-[0.98rem] leading-7 text-muted">{item.description}</p>
                 </div>
               ))}
             </div>
           </div>
-        </div>
 
-        <div className="rounded-[1.8rem] border border-black/10 bg-white p-5 shadow-soft sm:p-6">
-          <p className="text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-muted">Direção institucional</p>
-          <div className="mt-4 grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
-          {company.about.pillars.map((pillar, index) => (
-            <motion.div
-              key={pillar.title}
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.35, delay: index * 0.06 }}
-              className={`rounded-[1.1rem] border border-black/10 px-4 py-3 ${index === 1 ? "bg-paper" : "bg-white"}`}
-            >
-              <div className="grid items-start gap-2 sm:grid-cols-[auto_1fr] sm:gap-3">
-                <p className="text-[0.95rem] font-semibold leading-none text-black/24">0{index + 1}</p>
-                <div>
-                  <h3 className="text-sm font-semibold text-ink">{pillar.title}</h3>
-                  <p className="mt-1 text-sm leading-5.5 text-muted">{pillar.description}</p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+          <div className="rounded-[2rem] border border-ink/10 bg-surface p-5 shadow-soft sm:p-6">
+            <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-muted sm:tracking-[0.24em]">Base da operação</p>
+            <div className="mt-4 grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
+              {company.about.pillars.map((pillar, index) => (
+                <motion.div
+                  key={pillar.title}
+                  initial={{ opacity: 0, y: 18 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.35, delay: index * 0.06 }}
+                  className={`rounded-[1.3rem] border px-4 py-4 ${index === 1 ? "border-brand/20 bg-brand/5" : "border-ink/10 bg-white"}`}
+                >
+                  <div className="grid items-start gap-2 sm:grid-cols-[auto_1fr] sm:gap-3">
+                    <p className="text-[0.95rem] font-semibold leading-none text-brand">0{index + 1}</p>
+                    <div>
+                      <h3 className="text-base font-semibold text-ink">{pillar.title}</h3>
+                      <p className="mt-1 text-[0.98rem] leading-6 text-muted">{pillar.description}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
