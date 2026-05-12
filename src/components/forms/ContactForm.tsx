@@ -88,16 +88,16 @@ export function ContactForm() {
   };
 
   const fieldClassName =
-    "mt-2 min-h-12 w-full rounded-[1rem] border border-ink/10 bg-paper/45 px-4 text-[0.98rem] text-ink outline-none transition placeholder:text-muted focus:border-brand focus:ring-4 focus:ring-brand/10";
+    "mt-2 min-h-11 w-full rounded-[0.9rem] border border-ink/10 bg-paper/45 px-3.5 text-[0.98rem] text-ink outline-none transition placeholder:text-muted focus:border-brand focus:ring-4 focus:ring-brand/10 sm:min-h-12 sm:rounded-[1rem] sm:px-4";
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-5 rounded-[2rem] border border-ink/10 bg-surface p-6 shadow-soft sm:p-8">
-      <div className="border-b border-ink/8 pb-5">
-        <h3 className="text-2xl font-semibold text-ink">Envie os dados do projeto</h3>
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 rounded-[1.35rem] border border-ink/10 bg-surface p-4 shadow-soft sm:space-y-5 sm:rounded-[2rem] sm:p-8">
+      <div className="border-b border-ink/8 pb-4 sm:pb-5">
+        <h3 className="text-xl font-semibold text-ink sm:text-2xl">Envie os dados do projeto</h3>
         <p className="mt-2 text-[0.98rem] leading-7 text-muted">Informe o básico do projeto para receber um retorno mais objetivo.</p>
       </div>
 
-      <div className="grid gap-5 md:grid-cols-2">
+      <div className="grid gap-4 sm:gap-5 md:grid-cols-2">
         <label className="text-[0.98rem] font-medium text-ink">
           Nome *
           <input className={fieldClassName} {...register("name")} placeholder="Seu nome" />
@@ -131,7 +131,7 @@ export function ContactForm() {
         </label>
       </div>
 
-      <div className="grid gap-5 md:grid-cols-3">
+      <div className="grid gap-4 sm:gap-5 md:grid-cols-3">
         <label className="text-[0.98rem] font-medium text-ink md:col-span-1">
           Tipo de serviço *
           <select className={fieldClassName} defaultValue="" {...register("serviceType")}>
@@ -161,14 +161,14 @@ export function ContactForm() {
       <label className="text-[0.98rem] font-medium text-ink">
         Mensagem *
         <textarea
-          className="mt-2 min-h-36 w-full rounded-[1.25rem] border border-ink/10 bg-paper/45 px-4 py-3 text-[0.98rem] text-ink outline-none transition placeholder:text-muted focus:border-brand focus:ring-4 focus:ring-brand/10"
+          className="mt-2 min-h-32 w-full rounded-[1rem] border border-ink/10 bg-paper/45 px-3.5 py-3 text-[0.98rem] text-ink outline-none transition placeholder:text-muted focus:border-brand focus:ring-4 focus:ring-brand/10 sm:min-h-36 sm:rounded-[1.25rem] sm:px-4"
           {...register("message")}
           placeholder="Descreva o material, formato, quantidade, acabamento e qualquer requisito importante."
         />
         {errors.message ? <span className="mt-2 block text-sm text-red-600">{errors.message.message}</span> : null}
       </label>
 
-      <div className="rounded-[1.5rem] border border-ink/10 bg-editorial-paper p-5">
+      <div className="rounded-[1rem] border border-ink/10 bg-editorial-paper p-4 sm:rounded-[1.5rem] sm:p-5">
         <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-muted sm:tracking-[0.24em]">Envio</p>
         <p className="mt-3 text-[0.95rem] leading-7 text-graphite">
           Você pode abrir seu cliente de e-mail com os dados preenchidos ou copiar a mensagem para enviar manualmente.
@@ -176,8 +176,8 @@ export function ContactForm() {
       </div>
 
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex flex-col gap-3 sm:flex-row">
-          <Button type="button" size="lg" variant="secondary" onClick={handleCopyMessage}>
+        <div className="flex w-full flex-col gap-3 sm:flex-row">
+          <Button type="button" size="lg" fullWidth variant="secondary" onClick={handleCopyMessage} className="sm:w-auto">
             {copied ? <Check className="mr-2 h-4 w-4" /> : <Copy className="mr-2 h-4 w-4" />}
             {copied ? "Mensagem copiada" : "Copiar mensagem"}
           </Button>
@@ -185,7 +185,8 @@ export function ContactForm() {
             type="submit"
             size="lg"
             disabled={isSubmitting}
-            className="border-ink bg-ink text-paper hover:border-brand-strong hover:bg-brand-strong"
+            fullWidth
+            className="border-ink bg-ink text-paper hover:border-brand-strong hover:bg-brand-strong sm:w-auto"
           >
             <Send className="mr-2 h-4 w-4" />
             Abrir cliente de e-mail

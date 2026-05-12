@@ -24,7 +24,7 @@ export function SectionTitle({ eyebrow, title, description, align = "left" }: Se
           <span className="h-px w-10 bg-ink/12" />
         </span>
       ) : null}
-      <h2 className="font-display text-balance text-[1.95rem] font-semibold leading-[1.02] tracking-tight text-ink sm:text-[2.85rem]">
+      <h2 className="font-display text-balance text-[1.72rem] font-semibold leading-[1.08] tracking-tight text-ink sm:text-[2.85rem] sm:leading-[1.02]">
         {title}
       </h2>
       {description ? <p className="mt-4 max-w-2xl text-[0.98rem] leading-7 text-muted sm:text-[1.05rem] sm:leading-8">{description}</p> : null}

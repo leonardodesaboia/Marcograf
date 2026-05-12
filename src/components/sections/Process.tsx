@@ -6,20 +6,20 @@ import { Section } from "@/components/layout/Section";
 export function Process() {
   return (
     <Section id={sectionIds.process} className="section-divider">
-      <div className="hero-aura overflow-hidden rounded-[2.1rem] border border-white/12 px-5 py-8 text-white shadow-panel sm:rounded-[2.3rem] sm:px-8 sm:py-10 lg:px-10">
+      <div className="hero-aura overflow-hidden rounded-[1.35rem] border border-white/12 px-4 py-7 text-white shadow-panel sm:rounded-[2.3rem] sm:px-8 sm:py-10 lg:px-10">
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-flex items-center gap-2.5 text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-white/80 sm:gap-3 sm:tracking-[0.28em]">
             <span className="h-px w-10 bg-brand" />
             Processo
             <span className="h-px w-10 bg-white/15" />
           </span>
-          <h2 className="mt-4 font-display text-balance text-[1.95rem] font-semibold leading-tight tracking-tight text-white sm:mt-5 sm:text-[2.85rem]">
+          <h2 className="mt-4 font-display text-balance text-[1.72rem] font-semibold leading-tight tracking-tight text-white sm:mt-5 sm:text-[2.85rem]">
             {company.process.title}
           </h2>
           <p className="mt-4 text-[1rem] leading-7 text-white/84 sm:text-[1.05rem] sm:leading-8">{company.process.subtitle}</p>
         </div>
 
-        <div className="mt-12 grid gap-5 lg:grid-cols-4 lg:gap-4">
+        <div className="mt-8 grid auto-rows-fr gap-3 sm:mt-12 sm:gap-5 lg:grid-cols-4 lg:gap-4">
           {company.process.steps.map((step, index) => (
             <motion.div
               key={step.title}
@@ -27,13 +27,13 @@ export function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.35, delay: index * 0.06 }}
-              className="relative"
+              className="relative h-full"
             >
               {index < company.process.steps.length - 1 ? (
                 <span className="absolute left-6 top-14 h-[calc(100%-3.5rem)] w-px bg-white/12 lg:left-[calc(100%-1rem)] lg:top-6 lg:h-px lg:w-8" aria-hidden="true" />
               ) : null}
 
-              <div className="relative h-full rounded-[1.75rem] border border-white/10 bg-[rgba(255,248,238,0.12)] p-5 shadow-soft sm:p-6">
+              <div className="relative h-full rounded-[1.15rem] border border-white/10 bg-[rgba(255,248,238,0.12)] p-4 shadow-soft sm:rounded-[1.75rem] sm:p-6">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full border border-brand/20 bg-brand/14 text-lg font-semibold text-white">
                   0{index + 1}
                 </div>

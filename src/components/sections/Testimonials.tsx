@@ -12,7 +12,7 @@ export function Testimonials() {
 
   return (
     <Section id={sectionIds.testimonials} className="section-divider">
-      <div className="grid gap-12 lg:grid-cols-[0.74fr_1.26fr] lg:gap-16">
+      <div className="grid gap-8 sm:gap-12 lg:grid-cols-[0.74fr_1.26fr] lg:gap-16">
         <div className="lg:sticky lg:top-28 lg:self-start">
           <SectionTitle
             eyebrow="Avaliações"
@@ -20,7 +20,7 @@ export function Testimonials() {
             description="Clientes destacam qualidade, confiança e compromisso com o prazo."
           />
 
-          <div className="cmyk-stripe hero-aura mt-8 rounded-[2rem] border border-white/12 px-5 py-7 text-white shadow-panel sm:px-8 sm:py-8">
+          <div className="cmyk-stripe hero-aura mt-6 rounded-[1.35rem] border border-white/12 px-4 py-6 text-white shadow-panel sm:mt-8 sm:rounded-[2rem] sm:px-8 sm:py-8">
             <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-white/78 sm:tracking-[0.26em]">Avaliação pública</p>
             <div className="mt-5 flex items-center gap-1 text-yellow" aria-hidden="true">
               {Array.from({ length: 5 }).map((_, index) => {
@@ -44,7 +44,7 @@ export function Testimonials() {
           </div>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid auto-rows-fr gap-3 sm:gap-4 md:grid-cols-2">
           {testimonials.map((item, index) => (
             <motion.article
               key={item.name}
@@ -55,13 +55,13 @@ export function Testimonials() {
               className={index === 0 ? "md:col-span-2" : undefined}
             >
               <div
-                className={`h-full rounded-[1.75rem] border border-ink/10 px-5 py-6 shadow-soft ${
+                className={`flex h-full flex-col rounded-[1.15rem] border border-ink/10 px-4 py-5 shadow-soft sm:rounded-[1.75rem] sm:px-5 sm:py-6 ${
                   index === 0 ? "bg-editorial-paper" : "bg-surface"
                 }`}
               >
                 <Quote className="h-5 w-5 text-brand/75" aria-hidden="true" />
                 <p className="text-[0.98rem] leading-7 text-graphite">{item.text}</p>
-                <div className="mt-5 flex flex-col gap-2 border-t border-ink/8 pt-4 sm:flex-row sm:items-center sm:justify-between">
+                <div className="mt-auto flex flex-col gap-2 border-t border-ink/8 pt-4 sm:flex-row sm:items-center sm:justify-between">
                   <p className="text-base font-semibold text-ink">{item.name}</p>
                   <div className="inline-flex items-center gap-2 text-[0.82rem] font-semibold uppercase tracking-[0.14em] text-brand sm:tracking-[0.2em]">
                     <Star className="h-3.5 w-3.5 fill-current" aria-hidden="true" />

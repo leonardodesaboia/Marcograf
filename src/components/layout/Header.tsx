@@ -34,10 +34,10 @@ export function Header() {
         scrolled ? "shadow-[0_18px_40px_rgba(23,20,22,0.08)]" : "shadow-[0_8px_24px_rgba(23,20,22,0.04)]",
       )}
     >
-      <Container className="pt-4">
+      <Container className="pt-2.5 sm:pt-4">
         <div
           className={cn(
-            "flex min-h-[4.85rem] items-center justify-between gap-4 rounded-full border px-4 transition duration-200 sm:px-5",
+            "flex min-h-[4rem] items-center justify-between gap-3 rounded-[1.35rem] border px-3 transition duration-200 sm:min-h-[4.85rem] sm:rounded-full sm:px-5",
             scrolled
               ? "border-ink/10 bg-surface/96 shadow-soft"
               : "border-ink/10 bg-surface/92 shadow-[0_12px_34px_rgba(23,20,22,0.06)]",
@@ -49,7 +49,7 @@ export function Header() {
             className="flex items-center gap-3"
             aria-label={`Voltar ao início - ${company.name}`}
           >
-            <img src="/logo_marcograf.png" alt={company.name} className="h-11 w-auto" />
+            <img src="/logo_marcograf.png" alt={company.name} className="h-9 w-auto sm:h-11" />
             <div className="hidden min-[1180px]:block">
               <p className="text-sm font-semibold text-ink">Marcograf</p>
               <p className="text-xs uppercase tracking-[0.24em] text-muted">Fortaleza • 25+ anos</p>
@@ -77,7 +77,7 @@ export function Header() {
 
           <button
             type="button"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-ink md:hidden"
+            className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-white text-ink md:hidden"
             onClick={() => setOpen((value) => !value)}
             aria-expanded={open}
             aria-controls="mobile-menu"
@@ -91,14 +91,14 @@ export function Header() {
       {open ? (
         <div id="mobile-menu" className="md:hidden">
           <Container className="pt-3">
-            <div className="rounded-[2rem] border border-ink/8 bg-surface/96 p-5 shadow-soft backdrop-blur-xl">
-              <div className="flex flex-col gap-4">
+            <div className="rounded-[1.4rem] border border-ink/8 bg-surface/96 p-3 shadow-soft backdrop-blur-xl sm:rounded-[2rem] sm:p-5">
+              <div className="flex flex-col gap-2.5 sm:gap-4">
                 {navigation.map((item) => (
                   <a
                     key={item.href}
                     href={item.href}
                     onClick={handleNavigate(item.href)}
-                    className="rounded-2xl border border-transparent bg-paper/60 px-4 py-3 text-base font-medium text-graphite"
+                    className="rounded-[1rem] border border-transparent bg-paper/60 px-4 py-3 text-[0.95rem] font-medium text-graphite sm:rounded-2xl sm:text-base"
                   >
                     {item.label}
                   </a>

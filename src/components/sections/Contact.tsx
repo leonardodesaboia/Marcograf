@@ -11,17 +11,17 @@ export function Contact() {
     <Section id={sectionIds.contact} className="section-divider bg-paper">
       <SectionTitle eyebrow="Contato" title={company.contact.title} description={company.contact.subtitle} />
 
-      <div className="mt-10 grid items-start gap-8 lg:mt-12 lg:grid-cols-[0.84fr_1.16fr] lg:gap-10">
-        <div className="relative self-start overflow-hidden rounded-[2rem] border border-ink/10 bg-editorial-paper px-5 py-7 text-ink shadow-soft sm:px-8 sm:py-8">
+      <div className="mt-8 grid items-start gap-5 sm:mt-10 sm:gap-8 lg:mt-12 lg:grid-cols-[0.84fr_1.16fr] lg:gap-10">
+        <div className="relative self-start overflow-hidden rounded-[1.35rem] border border-ink/10 bg-editorial-paper px-4 py-6 text-ink shadow-soft sm:rounded-[2rem] sm:px-8 sm:py-8">
           <div className="absolute inset-x-5 top-0 h-1 rounded-full bg-[linear-gradient(90deg,rgba(111,123,73,0.92)_0_26%,rgba(138,67,81,0.92)_26%_54%,rgba(184,139,52,0.94)_54%_78%,rgba(181,91,44,0.94)_78%_100%)]" aria-hidden="true" />
           <div className="relative">
             <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-muted sm:tracking-[0.26em]">Contato comercial</p>
-            <h3 className="mt-4 max-w-sm text-[1.8rem] font-semibold leading-tight sm:mt-5 sm:text-[2.15rem]">
+            <h3 className="mt-4 max-w-sm text-[1.55rem] font-semibold leading-tight sm:mt-5 sm:text-[2.15rem]">
               Telefone e e-mails para orçamento.
             </h3>
 
-            <div className="mt-8 space-y-6">
-              <div className="border-t border-ink/10 pt-6">
+            <div className="mt-6 space-y-5 sm:mt-8 sm:space-y-6">
+              <div className="border-t border-ink/10 pt-5 sm:pt-6">
                 <div className="flex items-start gap-4">
                   <Phone className="mt-0.5 h-5 w-5 text-brand" aria-hidden="true" />
                   <div>
@@ -33,7 +33,7 @@ export function Contact() {
                 </div>
               </div>
 
-              <div className="border-t border-ink/10 pt-6">
+              <div className="border-t border-ink/10 pt-5 sm:pt-6">
                 <div className="flex items-start gap-4">
                   <Mail className="mt-0.5 h-5 w-5 text-brand" aria-hidden="true" />
                   <div>
@@ -57,13 +57,13 @@ export function Contact() {
         <ContactForm />
       </div>
 
-      <div className="mt-8 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="rounded-[2rem] border border-ink/10 bg-surface p-6 shadow-soft sm:p-8">
+      <div className="mt-6 grid gap-5 sm:mt-8 sm:gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="rounded-[1.35rem] border border-ink/10 bg-surface p-4 shadow-soft sm:rounded-[2rem] sm:p-8">
           <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-muted sm:tracking-[0.24em]">Localização</p>
-          <h3 className="mt-4 text-[1.65rem] font-semibold leading-tight text-ink sm:text-[1.95rem]">Estrutura própria em Fortaleza/CE</h3>
+          <h3 className="mt-4 text-[1.45rem] font-semibold leading-tight text-ink sm:text-[1.95rem]">Estrutura própria em Fortaleza/CE</h3>
           <p className="mt-4 text-[0.98rem] leading-7 text-muted">Atendimento presencial, retirada combinada e acompanhamento de produção.</p>
 
-          <div className="mt-6 rounded-[1.5rem] border border-ink/10 bg-editorial-paper p-5">
+          <div className="mt-5 rounded-[1rem] border border-ink/10 bg-editorial-paper p-4 sm:mt-6 sm:rounded-[1.5rem] sm:p-5">
             <p className="text-[0.98rem] font-semibold leading-7 text-ink">{company.address.full}</p>
             <p className="mt-2 text-[0.95rem] leading-7 text-muted">Plus code: {company.address.plusCode}</p>
           </div>
@@ -90,11 +90,11 @@ export function Contact() {
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-[2rem] border border-ink/10 bg-white shadow-soft">
+        <div className="overflow-hidden rounded-[1.35rem] border border-ink/10 bg-white shadow-soft sm:rounded-[2rem]">
           <iframe
             title="Mapa da Marcograf"
             src={company.map.embedUrl}
-            className="h-[320px] w-full md:h-[420px]"
+            className="h-[260px] w-full sm:h-[320px] md:h-[420px]"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />

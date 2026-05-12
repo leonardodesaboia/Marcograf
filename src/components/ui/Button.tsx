@@ -32,7 +32,7 @@ const variants = {
 const sizes = {
   sm: "min-h-10 px-4 text-sm",
   md: "min-h-11 px-5 text-sm sm:text-[0.95rem]",
-  lg: "min-h-[3.35rem] px-6 text-[0.98rem]",
+  lg: "min-h-12 px-5 text-[0.95rem] sm:min-h-[3.35rem] sm:px-6 sm:text-[0.98rem]",
 } as const;
 
 const sharedClassName =
