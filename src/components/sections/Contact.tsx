@@ -15,9 +15,9 @@ export function Contact() {
         <div className="relative self-start overflow-hidden rounded-[1.35rem] border border-ink/10 bg-editorial-paper px-4 py-6 text-ink shadow-soft sm:rounded-[2rem] sm:px-8 sm:py-8">
           <div className="bg-cmyk-band absolute inset-x-5 top-0 h-1 rounded-full" aria-hidden="true" />
           <div className="relative">
-            <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-muted sm:tracking-[0.26em]">Contato comercial</p>
+            <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-muted sm:tracking-[0.26em]">Fale com a equipe</p>
             <h3 className="mt-4 max-w-sm text-[1.55rem] font-semibold leading-tight sm:mt-5 sm:text-[2.15rem]">
-              Telefone e e-mails para orçamento.
+              Envie a demanda e receba orientação para orçamento.
             </h3>
 
             <div className="mt-6 space-y-5 sm:mt-8 sm:space-y-6">
@@ -25,7 +25,7 @@ export function Contact() {
                 <div className="flex items-start gap-4">
                   <Phone className="mt-0.5 h-5 w-5 text-brand" aria-hidden="true" />
                   <div>
-                    <h4 className="text-lg font-semibold text-ink">Telefone comercial</h4>
+                    <h4 className="text-lg font-semibold text-ink">Telefone</h4>
                     <a href={company.phoneLink} className="mt-2 inline-block text-[0.98rem] text-graphite transition hover:text-ink">
                       {company.phone}
                     </a>
@@ -69,23 +69,17 @@ export function Contact() {
           </div>
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <Button
-              fullWidth
-              href={company.map.searchUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="sm:w-auto"
-            >
-              Ver rotas
-              <ArrowUpRight className="ml-2 h-4 w-4" aria-hidden="true" />
+            <Button fullWidth href={`mailto:${company.emails.budget}`} className="sm:w-auto">
+              <Mail className="mr-2 h-4 w-4" aria-hidden="true" />
+              Enviar e-mail
             </Button>
             <Button fullWidth href={company.phoneLink} variant="secondary" className="sm:w-auto">
               <Phone className="mr-2 h-4 w-4" aria-hidden="true" />
               Ligar para a empresa
             </Button>
-            <Button fullWidth href={`mailto:${company.emails.budget}`} variant="secondary" className="sm:w-auto">
-              <Mail className="mr-2 h-4 w-4" aria-hidden="true" />
-              Enviar e-mail
+            <Button fullWidth href={company.map.searchUrl} variant="ghost" target="_blank" rel="noreferrer" className="sm:w-auto">
+              Ver rotas
+              <ArrowUpRight className="ml-2 h-4 w-4" aria-hidden="true" />
             </Button>
           </div>
         </div>

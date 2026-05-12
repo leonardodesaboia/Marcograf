@@ -1,6 +1,7 @@
 import { ArrowRight, CheckCircle2, Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { company } from "@/data/company";
+import { landingImages } from "@/data/visuals";
 import { sectionIds } from "@/lib/constants";
 import { useScrollToSection } from "@/hooks/useScrollToSection";
 import { Button } from "@/components/ui/Button";
@@ -98,7 +99,13 @@ export function Hero() {
           >
             <div className="soft-panel overflow-hidden rounded-[1.35rem] border border-white/10 p-2 shadow-panel sm:rounded-[2.2rem] sm:p-3 lg:flex lg:h-full">
               <div className="relative overflow-hidden rounded-[1.5rem] sm:rounded-[1.7rem] lg:h-full lg:w-full">
-                <img src="structure.png" alt="Imagem do maquinário" className="h-[15rem] w-full object-cover sm:h-[20rem] lg:h-full lg:min-h-[29rem]" width="800" height="400" />
+                <img
+                  src={landingImages.hero}
+                  alt="Imagem de prensa industrial em operação"
+                  className="h-[15rem] w-full object-cover sm:h-[20rem] lg:h-full lg:min-h-[29rem]"
+                  width="800"
+                  height="400"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/68 via-ink/10 to-transparent" aria-hidden="true" />
                 <div className="absolute bottom-2.5 left-2.5 right-2.5 rounded-[1rem] border border-white/10 bg-ink/84 p-3 text-white backdrop-blur-xl sm:bottom-4 sm:left-4 sm:right-4 sm:rounded-[1.4rem] sm:p-4">
                   <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-white/78 sm:tracking-[0.26em]">Fluxo interno</p>

@@ -6,17 +6,17 @@ import { Section } from "@/components/layout/Section";
 export function Process() {
   return (
     <Section id={sectionIds.process} className="section-divider">
-      <div className="hero-aura overflow-hidden rounded-[1.35rem] border border-white/12 px-4 py-7 text-white shadow-panel sm:rounded-[2.3rem] sm:px-8 sm:py-10 lg:px-10">
+      <div className="overflow-hidden rounded-[1.35rem] border border-ink/10 bg-surface px-4 py-7 text-ink shadow-soft sm:rounded-[2.3rem] sm:px-8 sm:py-10 lg:px-10">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2.5 text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-white/80 sm:gap-3 sm:tracking-[0.28em]">
+          <span className="inline-flex items-center gap-2.5 text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-muted sm:gap-3 sm:tracking-[0.28em]">
             <span className="h-px w-10 bg-brand" />
             Processo
-            <span className="h-px w-10 bg-white/15" />
+            <span className="h-px w-10 bg-ink/12" />
           </span>
-          <h2 className="mt-4 font-display text-balance text-[1.72rem] font-semibold leading-tight tracking-tight text-white sm:mt-5 sm:text-[2.85rem]">
+          <h2 className="mt-4 font-display text-balance text-[1.72rem] font-semibold leading-tight tracking-tight text-ink sm:mt-5 sm:text-[2.85rem]">
             {company.process.title}
           </h2>
-          <p className="mt-4 text-[1rem] leading-7 text-white/84 sm:text-[1.05rem] sm:leading-8">{company.process.subtitle}</p>
+          <p className="mt-4 text-[1rem] leading-7 text-muted sm:text-[1.05rem] sm:leading-8">{company.process.subtitle}</p>
         </div>
 
         <div className="mt-8 grid auto-rows-fr gap-3 sm:mt-12 sm:gap-5 lg:grid-cols-4 lg:gap-4">
@@ -30,15 +30,15 @@ export function Process() {
               className="relative h-full"
             >
               {index < company.process.steps.length - 1 ? (
-                <span className="absolute left-6 top-14 h-[calc(100%-3.5rem)] w-px bg-white/12 lg:left-[calc(100%-1rem)] lg:top-6 lg:h-px lg:w-8" aria-hidden="true" />
+                <span className="absolute left-6 top-14 h-[calc(100%-3.5rem)] w-px bg-ink/10 lg:left-[calc(100%-1rem)] lg:top-6 lg:h-px lg:w-8" aria-hidden="true" />
               ) : null}
 
-              <div className="relative h-full rounded-[1.15rem] border border-white/10 bg-[rgba(255,248,238,0.12)] p-4 shadow-soft sm:rounded-[1.75rem] sm:p-6">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-brand/20 bg-brand/14 text-lg font-semibold text-white">
+              <div className="relative h-full rounded-[1.15rem] border border-ink/10 bg-editorial-paper p-4 shadow-soft sm:rounded-[1.75rem] sm:p-6">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-brand/20 bg-brand/10 text-lg font-semibold text-brand">
                   0{index + 1}
                 </div>
-                <h3 className="mt-6 text-xl font-semibold text-white">{step.title}</h3>
-                <p className="mt-3 text-[0.98rem] leading-7 text-white/88">{step.description}</p>
+                <h3 className="mt-6 text-xl font-semibold text-ink">{step.title}</h3>
+                <p className="mt-3 text-[0.98rem] leading-7 text-muted">{step.description}</p>
               </div>
             </motion.div>
           ))}

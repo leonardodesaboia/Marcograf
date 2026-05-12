@@ -4,6 +4,7 @@ export const sectionIds = {
   home: "inicio",
   about: "sobre",
   services: "servicos",
+  portfolio: "portfolio",
   structure: "estrutura",
   differentials: "diferenciais",
   testimonials: "avaliacoes",

@@ -1,26 +1,26 @@
 export const differentials = [
   {
-    title: "25+ anos de experiência",
-    description: "Histórico consistente no mercado gráfico.",
+    title: "Conferência técnica antes da produção",
+    description: "A demanda passa por validação de arquivo, especificação e aplicação antes de seguir.",
   },
   {
-    title: "Estrutura própria",
-    description: "Parque gráfico preparado para diferentes demandas.",
+    title: "Produção e acabamento no mesmo fluxo",
+    description: "Mais controle entre impressão, acabamento e liberação final do material.",
   },
   {
-    title: "Variedade de soluções",
-    description: "Editorial, embalagens, publicidade, papelaria e comunicação visual.",
+    title: "Atuação em diferentes linhas gráficas",
+    description: "Editorial, embalagens, promocionais, papelaria e comunicação visual com a mesma base operacional.",
   },
   {
-    title: "Qualidade de acabamento",
-    description: "Mais cuidado na apresentação final do material.",
+    title: "Especificação orientada por aplicação",
+    description: "Formato, substrato, tiragem e acabamento são avaliados conforme o uso real da peça.",
   },
   {
-    title: "Compromisso com o cliente",
-    description: "Atendimento com seriedade, clareza e compromisso.",
+    title: "Prazos tratados com clareza",
+    description: "O orçamento considera volume, processo e acabamento para reduzir ruído na execução.",
   },
   {
-    title: "Atendimento em Fortaleza",
-    description: "Base local para atendimento e acompanhamento próximo.",
+    title: "Base local para acompanhamento próximo",
+    description: "Atendimento em Fortaleza para alinhamento comercial, retirada e acompanhamento de produção.",
   },
 ] as const;

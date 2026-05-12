@@ -26,22 +26,22 @@ export function Services() {
             <img
               src={landingImages.services[0]}
               alt="Detalhe de materiais impressos em produção"
-              className="h-40 w-full object-cover sm:h-52"
+              className="h-32 w-full object-cover sm:h-44"
               loading="lazy"
               width="900"
               height="520"
             />
             <div className="p-4 sm:p-6">
             <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-muted sm:tracking-[0.26em]">Frentes de atuação</p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {services.map((service) => (
+            <div className="mt-4 flex flex-wrap gap-2">
+              {services.slice(0, 4).map((service) => (
                 <span key={service.title} className="rounded-full border border-ink/10 bg-white px-3 py-2 text-[0.92rem] font-medium text-graphite">
                   {service.title}
                 </span>
               ))}
             </div>
 
-              <div className="mt-6 sm:mt-8">
+              <div className="mt-5 sm:mt-6">
               <Button variant="secondary" onClick={scrollToSection(`#${sectionIds.contact}`)}>
                 Falar com a equipe
               </Button>
@@ -64,7 +64,7 @@ export function Services() {
                 <img
                   src={landingImages.services[index]}
                   alt={`Imagem ilustrativa de ${service.title.toLowerCase()}`}
-                  className="h-36 w-full object-cover sm:h-44"
+                  className="h-32 w-full object-cover sm:h-40"
                   loading="lazy"
                   width="900"
                   height="520"
@@ -75,11 +75,11 @@ export function Services() {
                     <p className="text-[0.82rem] font-semibold tracking-[0.16em] text-muted sm:tracking-[0.22em]">0{index + 1}</p>
                   </div>
 
-                  <div className="mt-5 flex flex-1 flex-col sm:mt-6">
-                    <h3 className="text-[1.4rem] font-semibold leading-tight text-ink sm:text-[1.7rem]">{service.title}</h3>
-                    <p className="mt-4 text-[0.98rem] leading-7 text-muted">{service.description}</p>
-                    <div className="mt-5 flex flex-wrap gap-2">
-                      {service.items.map((item) => (
+                  <div className="mt-4 flex flex-1 flex-col sm:mt-5">
+                    <h3 className="text-[1.28rem] font-semibold leading-tight text-ink sm:text-[1.55rem]">{service.title}</h3>
+                    <p className="mt-3 text-[0.94rem] leading-6 text-muted">{service.description}</p>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {service.items.slice(0, 4).map((item) => (
                         <span key={item} className="rounded-full border border-ink/10 bg-paper px-3 py-1.5 text-[0.9rem] font-medium text-graphite">
                           {item}
                         </span>

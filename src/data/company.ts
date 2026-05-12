@@ -2,7 +2,7 @@ export const company = {
   name: "Marcograf Indústria Gráfica",
   legalName: "Marcograf Gráfica Ltda.",
   cnpj: "02.963.095/0001-74",
-  tagline: "Estrutura própria, atendimento técnico e acabamento profissional em Fortaleza.",
+  tagline: "Pré-impressão orientada, produção própria e acabamento profissional em Fortaleza.",
   years: "25+",
   rating: 4.7,
   reviews: 55,
@@ -33,79 +33,79 @@ export const company = {
       "https://www.google.com/maps?q=Av.%20Capit%C3%A3o%20Hugo%20Bezerra%2C%20385%20-%20Barroso%2C%20Fortaleza%20-%20CE%2C%2060862-730&output=embed",
   },
   hero: {
-    title: "Produção gráfica com controle técnico do arquivo ao acabamento",
+    title: "Impressão com pré-impressão orientada, produção própria e acabamento no mesmo fluxo",
     description:
-      "Projetos editoriais, corporativos e promocionais com estrutura própria em Fortaleza.",
+      "A Marcograf atende materiais editoriais, corporativos, promocionais e de embalagem com mais controle técnico do arquivo à entrega.",
     highlights: [
-      "Projetos editoriais",
-      "Materiais corporativos",
-      "Embalagens e promocionais",
+      "Conferência técnica de arquivo",
+      "Produção e acabamento no mesmo fluxo",
+      "Atendimento para editorial, corporativo e promocional",
     ],
   },
   about: {
-    title: "Estrutura e experiência para imprimir com segurança",
+    title: "Estrutura e critério técnico para produzir com mais segurança",
     paragraphs: [
-      "A Marcograf reúne equipe experiente, parque gráfico próprio e atendimento técnico para conduzir projetos com mais controle e consistência.",
-      "São mais de 25 anos de atuação em materiais editoriais, corporativos, promocionais e de embalagem.",
+      "A Marcograf reúne pré-impressão orientada, parque gráfico próprio e acabamento interno para conduzir projetos com mais previsibilidade.",
+      "São mais de 25 anos atendendo materiais editoriais, corporativos, promocionais e de embalagem com especificação técnica e acompanhamento de produção.",
     ],
     pillars: [
       {
         title: "Missão",
         description:
-          "Produzir materiais impressos com qualidade, critério técnico e bom atendimento.",
+          "Produzir materiais impressos com clareza técnica, consistência de execução e atendimento objetivo.",
       },
       {
         title: "Visão",
-        description: "Ser reconhecida pela consistência, qualidade e credibilidade.",
+        description: "Ser lembrada pela confiança operacional e pela qualidade do que entrega.",
       },
       {
         title: "Valores",
         description:
-          "Compromisso, qualidade e credibilidade em cada entrega.",
+          "Critério técnico, compromisso com prazo e responsabilidade em cada etapa.",
       },
     ],
   },
   process: {
-    title: "Como funciona o atendimento",
+    title: "Como a demanda entra, é validada e segue para produção",
     subtitle:
-      "Um fluxo simples para entender a demanda, orçar e produzir com clareza.",
+      "Um fluxo objetivo para analisar especificação, orientar o arquivo e produzir com mais previsibilidade.",
     steps: [
       {
-        title: "Envio da demanda",
+        title: "Briefing e material",
         description:
-          "Você informa material, quantidade, formato, prazo e arquivos disponíveis.",
+          "Você envia aplicação, quantidade, formato, prazo e os arquivos já disponíveis.",
       },
       {
-        title: "Análise técnica",
+        title: "Conferência técnica",
         description:
-          "A equipe valida as especificações e orienta a melhor solução.",
+          "A equipe avalia arquivo, especificações, acabamento e pontos que precisam de ajuste.",
       },
       {
-        title: "Orçamento",
+        title: "Definição da solução",
         description:
-          "O orçamento considera impressão, acabamento, volume e prazo.",
+          "A proposta considera processo de impressão, substrato, acabamento, volume e prazo.",
       },
       {
         title: "Produção",
         description:
-          "Após aprovação, o material segue para produção e entrega ou retirada.",
+          "Após aprovação, o material segue para produção, acabamento e entrega ou retirada.",
       },
     ],
   },
   contact: {
-    title: "Solicite um orçamento para o seu projeto gráfico",
+    title: "Envie a especificação do projeto e receba retorno técnico",
     subtitle:
-      "Fale com a equipe e receba um retorno técnico para o seu material.",
+      "Fale com a equipe comercial para validar a demanda e avançar para orçamento.",
   },
   location: {
     title: "Estamos em Fortaleza",
     subtitle:
-      "Atendimento com estrutura própria para projetos editoriais, embalagens, papelaria, publicidade e comunicação visual.",
+      "Atendimento com estrutura própria para editorial, embalagens, papelaria, publicidade e comunicação visual.",
   },
   finalCta: {
-    title: "Precisa produzir com mais segurança e controle?",
+    title: "Precisa validar especificação, prazo e acabamento com mais segurança?",
     description:
-      "Conte com a Marcograf para tirar seu projeto do arquivo e levar até o acabamento.",
+      "Conte com a Marcograf para conduzir o projeto com mais critério técnico do arquivo à produção.",
   },
   seo: {
     title: "Marcograf Indústria Gráfica | Gráfica em Fortaleza",

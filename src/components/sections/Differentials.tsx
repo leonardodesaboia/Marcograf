@@ -12,15 +12,15 @@ export function Differentials() {
   return (
     <Section id={sectionIds.differentials} className="section-divider bg-paper">
       <div className="grid items-stretch gap-8 sm:gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16">
-        <div className="cmyk-stripe hero-aura relative flex h-full flex-col overflow-hidden rounded-[1.35rem] border border-white/12 px-4 py-6 text-white shadow-panel sm:rounded-[2rem] sm:px-8 sm:py-8">
-          <div className="bg-technical-grid absolute inset-0 opacity-[0.08]" aria-hidden="true" />
+        <div className="relative flex h-full flex-col overflow-hidden rounded-[1.35rem] border border-ink/10 bg-editorial-paper px-4 py-6 text-ink shadow-soft sm:rounded-[2rem] sm:px-8 sm:py-8">
+          <div className="absolute inset-x-5 top-0 h-1 bg-cmyk-band rounded-full" aria-hidden="true" />
           <div className="relative flex h-full flex-col">
-            <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-white/78 sm:tracking-[0.28em]">Diferenciais</p>
-            <h2 className="mt-4 max-w-md font-display text-[2rem] font-semibold leading-tight text-white sm:mt-5 sm:text-[2.4rem]">
+            <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-muted sm:tracking-[0.28em]">Diferenciais</p>
+            <h2 className="mt-4 max-w-md font-display text-[2rem] font-semibold leading-tight text-ink sm:mt-5 sm:text-[2.4rem]">
               Por que escolher a Marcograf?
             </h2>
-            <p className="mt-4 max-w-md text-[1rem] leading-7 text-white/84 sm:leading-8">
-              Experiência, estrutura própria e compromisso com qualidade fazem da Marcograf uma parceira para projetos gráficos de diferentes portes.
+            <p className="mt-4 max-w-md text-[1rem] leading-7 text-muted sm:leading-8">
+              A operação combina validação técnica, produção própria e acabamento interno para reduzir ruído entre orçamento, arquivo e entrega.
             </p>
 
             <img
@@ -33,11 +33,7 @@ export function Differentials() {
             />
 
             <div className="mt-8 lg:mt-auto lg:pt-8">
-              <Button
-                variant="secondary"
-                onClick={scrollToSection(`#${sectionIds.contact}`)}
-                className="border-white/14 bg-paper text-ink hover:border-white/30 hover:bg-white"
-              >
+              <Button onClick={scrollToSection(`#${sectionIds.contact}`)}>
                 Solicitar orçamento
               </Button>
             </div>
