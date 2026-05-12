@@ -6,7 +6,7 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Section } from "@/components/layout/Section";
 
 export function Portfolio() {
-  const visibleCases = portfolioCases.slice(0, 3);
+  const visibleCases = portfolioCases;
 
   return (
     <Section id={sectionIds.portfolio} className="section-divider bg-surface">
@@ -19,7 +19,7 @@ export function Portfolio() {
           />
         </div>
 
-        <div className="grid auto-rows-fr gap-3 sm:gap-4 md:grid-cols-3">
+        <div className="grid auto-rows-fr gap-3 sm:gap-4 md:grid-cols-2 xl:grid-cols-4">
           {visibleCases.map((item, index) => (
             <motion.article
               key={item.title}
@@ -32,7 +32,7 @@ export function Portfolio() {
                 <div className="relative">
                   <img
                     src={landingImages.portfolio[index]}
-                    alt={`Imagem temporária de referência para ${item.category.toLowerCase()}`}
+                    alt={`${item.category} produzidos pela Marcograf`}
                     className="h-40 w-full object-cover sm:h-48"
                     loading="lazy"
                     width="1200"

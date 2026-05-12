@@ -6,6 +6,7 @@ import { Contact } from "@/components/sections/Contact";
 import { Differentials } from "@/components/sections/Differentials";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Hero } from "@/components/sections/Hero";
+import { Location } from "@/components/sections/Location";
 import { Portfolio } from "@/components/sections/Portfolio";
 import { Process } from "@/components/sections/Process";
 import { Services } from "@/components/sections/Services";
@@ -48,6 +49,7 @@ export function Home() {
           <Structure />
           <Testimonials />
           <Contact />
+          <Location />
           <FinalCTA />
         </main>
         <WhatsAppButton />

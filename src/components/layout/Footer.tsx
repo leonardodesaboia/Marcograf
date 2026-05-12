@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 
 export function Footer() {
   const scrollToSection = useScrollToSection();
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="cmyk-stripe hero-aura py-14 text-white">
@@ -47,17 +48,13 @@ export function Footer() {
               <Phone className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
               <span className="break-words">{company.phone}</span>
             </a>
-            <a href={`mailto:${company.emails.commercial}`} className="flex items-start gap-3 transition hover:text-white">
-              <Mail className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
-              <span className="break-all">{company.emails.commercial}</span>
-            </a>
             <a href={`mailto:${company.emails.budget}`} className="flex items-start gap-3 transition hover:text-white">
               <Mail className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
               <span className="break-all">{company.emails.budget}</span>
             </a>
-            <a href={`mailto:${company.emails.prepress}`} className="flex items-start gap-3 transition hover:text-white">
+            <a href={`mailto:${company.emails.commercial}`} className="flex items-start gap-3 transition hover:text-white">
               <Mail className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
-              <span className="break-all">{company.emails.prepress}</span>
+              <span className="break-all">{company.emails.commercial}</span>
             </a>
             <a
               href={company.map.searchUrl}
@@ -72,7 +69,7 @@ export function Footer() {
         </div>
       </Container>
       <Container className="mt-10 border-t border-white/10 pt-6">
-        <p className="text-sm text-white/72">© Marcograf Indústria Gráfica. Todos os direitos reservados.</p>
+        <p className="text-sm text-white/72">© {currentYear} Marcograf Indústria Gráfica. Todos os direitos reservados.</p>
       </Container>
     </footer>
   );

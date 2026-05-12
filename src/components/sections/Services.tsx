@@ -25,7 +25,7 @@ export function Services() {
           <div className="mt-6 overflow-hidden rounded-[1.35rem] border border-ink/10 bg-editorial-paper shadow-soft sm:mt-8 sm:rounded-[1.9rem]">
             <img
               src={landingImages.services[0]}
-              alt="Detalhe de materiais impressos em produção"
+              alt="Linha de produção gráfica em funcionamento"
               className="h-32 w-full object-cover sm:h-44"
               loading="lazy"
               width="900"
@@ -62,7 +62,7 @@ export function Services() {
             >
               <div className="flex h-full flex-col overflow-hidden rounded-[1.25rem] border border-ink/10 bg-white shadow-soft sm:rounded-[1.8rem]">
                 <img
-                  src={landingImages.services[index]}
+                  src={landingImages.services[index + 1]}
                   alt={`Imagem ilustrativa de ${service.title.toLowerCase()}`}
                   className="h-32 w-full object-cover sm:h-40"
                   loading="lazy"

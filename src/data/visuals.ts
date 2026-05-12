@@ -1,23 +1,22 @@
-const unsplash = (photoId: string, width = 1200) =>
-  `https://images.unsplash.com/${photoId}?auto=format&fit=crop&w=${width}&q=80`;
-
+// Curated placeholder stock images while official Marcograf photography is not available.
 export const landingImages = {
-  hero: "https://images.pexels.com/photos/19316517/pexels-photo-19316517.png?cs=srgb&dl=pexels-joaojesusdesign-19316517.jpg&fm=jpg",
-  about: unsplash("photo-1751168488844-e79f27687928", 1200),
-  differentials: unsplash("photo-1750534232339-017655f56081", 1000),
-  structure: unsplash("photo-1693031630146-568e2f72db0e", 1200),
-  finalCta: unsplash("photo-1674316206411-52408f9a5b5d", 900),
+  hero: "https://images.pexels.com/photos/9550363/pexels-photo-9550363.jpeg?cs=srgb&dl=pexels-criiv-9550363.jpg&fm=jpg",
+  about: "https://images.pexels.com/photos/36412293/pexels-photo-36412293.jpeg?cs=srgb&dl=pexels-somogrobangladesh-36412293.jpg&fm=jpg",
+  differentials: "https://images.pexels.com/photos/1440504/pexels-photo-1440504.jpeg?cs=srgb&dl=pexels-wendelinjacober-1440504.jpg&fm=jpg",
+  structure: "https://images.pexels.com/photos/9550363/pexels-photo-9550363.jpeg?cs=srgb&dl=pexels-criiv-9550363.jpg&fm=jpg",
+  finalCta: "https://images.pexels.com/photos/36412293/pexels-photo-36412293.jpeg?cs=srgb&dl=pexels-somogrobangladesh-36412293.jpg&fm=jpg",
   portfolio: [
-    unsplash("photo-1586075010923-2dd4570fb338", 1400),
-    unsplash("photo-1516321318423-f06f85e504b3", 1200),
-    unsplash("photo-1520607162513-77705c0f0d4a", 1200),
-    unsplash("photo-1587614382346-4ec70e388b28", 1200),
+    "https://images.pexels.com/photos/8066709/pexels-photo-8066709.png?cs=srgb&dl=pexels-mediamodifier-61455177-8066709.jpg&fm=jpg",
+    "https://images.pexels.com/photos/6348/reading-magazine-open-newspaper.jpg?cs=srgb&dl=pexels-karola-g2-6348.jpg&fm=jpg",
+    "https://images.pexels.com/photos/6143824/pexels-photo-6143824.jpeg?cs=srgb&dl=pexels-cottonbro-6143824.jpg&fm=jpg",
+    "https://images.pexels.com/photos/36519146/pexels-photo-36519146.jpeg?cs=srgb&dl=pexels-peter-dyllong-2158803154-36519146.jpg&fm=jpg",
   ],
   services: [
-    unsplash("photo-1748746269731-899a6cde0c0b", 900),
-    "https://images.pexels.com/photos/14896593/pexels-photo-14896593.jpeg?cs=srgb&dl=pexels-maria-amparo-escudero-255076243-14896593.jpg&fm=jpg",
-    "https://images.pexels.com/photos/14557897/pexels-photo-14557897.jpeg?cs=srgb&dl=pexels-monstera-14557897.jpg&fm=jpg",
-    "https://images.pexels.com/photos/7956854/pexels-photo-7956854.jpeg?cs=srgb&dl=pexels-eva-bronzini-7956854.jpg&fm=jpg",
-    unsplash("photo-1771848194199-873beaa7c1dc", 900),
+    "https://images.pexels.com/photos/9550363/pexels-photo-9550363.jpeg?cs=srgb&dl=pexels-criiv-9550363.jpg&fm=jpg",
+    "https://images.pexels.com/photos/6348/reading-magazine-open-newspaper.jpg?cs=srgb&dl=pexels-karola-g2-6348.jpg&fm=jpg",
+    "https://images.pexels.com/photos/8066709/pexels-photo-8066709.png?cs=srgb&dl=pexels-mediamodifier-61455177-8066709.jpg&fm=jpg",
+    "https://images.pexels.com/photos/36519146/pexels-photo-36519146.jpeg?cs=srgb&dl=pexels-peter-dyllong-2158803154-36519146.jpg&fm=jpg",
+    "https://images.pexels.com/photos/36519146/pexels-photo-36519146.jpeg?cs=srgb&dl=pexels-peter-dyllong-2158803154-36519146.jpg&fm=jpg",
+    "https://images.pexels.com/photos/6143824/pexels-photo-6143824.jpeg?cs=srgb&dl=pexels-cottonbro-6143824.jpg&fm=jpg",
   ],
 } as const;

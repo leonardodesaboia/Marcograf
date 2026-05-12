@@ -12,6 +12,7 @@ export function About() {
         <div className="lg:sticky lg:top-28 lg:self-start">
           <SectionTitle eyebrow="Sobre" title={company.about.title} description={company.tagline} />
           <p className="mt-5 text-[0.98rem] leading-7 text-muted sm:mt-8 sm:text-lg sm:leading-8">{company.about.paragraphs[0]}</p>
+          <p className="mt-4 text-[0.98rem] leading-7 text-muted sm:text-lg sm:leading-8">{company.about.paragraphs[1]}</p>
 
           <div className="hero-aura mt-6 overflow-hidden rounded-[1.35rem] border border-white/12 text-white shadow-panel sm:mt-8 sm:rounded-[1.8rem]">
             <img
@@ -72,7 +73,7 @@ export function About() {
               <div className="h-1.5 w-28 rounded-full bg-cmyk-band" aria-hidden="true" />
             </div>
 
-            <div className="mt-5 grid auto-rows-fr gap-3 sm:grid-cols-3 lg:grid-cols-1">
+            <div className="mt-5 grid auto-rows-fr gap-3 md:grid-cols-3 lg:grid-cols-1">
               {company.about.operationBase.map((pillar, index) => (
                 <motion.div
                   key={pillar.title}
