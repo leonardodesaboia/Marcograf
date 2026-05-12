@@ -15,9 +15,9 @@ export const landingImages = {
   ],
   services: [
     unsplash("photo-1748746269731-899a6cde0c0b", 900),
-    unsplash("photo-1674316206411-52408f9a5b5d", 900),
-    unsplash("photo-1693031630146-568e2f72db0e", 900),
-    unsplash("photo-1751168488844-e79f27687928", 900),
+    "https://images.pexels.com/photos/14896593/pexels-photo-14896593.jpeg?cs=srgb&dl=pexels-maria-amparo-escudero-255076243-14896593.jpg&fm=jpg",
+    "https://images.pexels.com/photos/14557897/pexels-photo-14557897.jpeg?cs=srgb&dl=pexels-monstera-14557897.jpg&fm=jpg",
+    "https://images.pexels.com/photos/7956854/pexels-photo-7956854.jpeg?cs=srgb&dl=pexels-eva-bronzini-7956854.jpg&fm=jpg",
     unsplash("photo-1771848194199-873beaa7c1dc", 900),
   ],
 } as const;
