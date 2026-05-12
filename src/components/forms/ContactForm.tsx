@@ -186,7 +186,7 @@ export function ContactForm() {
             size="lg"
             disabled={isSubmitting}
             fullWidth
-            className="border-ink bg-ink text-paper hover:border-brand-strong hover:bg-brand-strong sm:w-auto"
+            className="sm:w-auto"
           >
             <Send className="mr-2 h-4 w-4" />
             Abrir cliente de e-mail

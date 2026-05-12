@@ -13,7 +13,7 @@ export function Contact() {
 
       <div className="mt-8 grid items-start gap-5 sm:mt-10 sm:gap-8 lg:mt-12 lg:grid-cols-[0.84fr_1.16fr] lg:gap-10">
         <div className="relative self-start overflow-hidden rounded-[1.35rem] border border-ink/10 bg-editorial-paper px-4 py-6 text-ink shadow-soft sm:rounded-[2rem] sm:px-8 sm:py-8">
-          <div className="absolute inset-x-5 top-0 h-1 rounded-full bg-[linear-gradient(90deg,rgba(111,123,73,0.92)_0_26%,rgba(138,67,81,0.92)_26%_54%,rgba(184,139,52,0.94)_54%_78%,rgba(181,91,44,0.94)_78%_100%)]" aria-hidden="true" />
+          <div className="bg-cmyk-band absolute inset-x-5 top-0 h-1 rounded-full" aria-hidden="true" />
           <div className="relative">
             <p className="text-[0.76rem] font-semibold uppercase tracking-[0.18em] text-muted sm:tracking-[0.26em]">Contato comercial</p>
             <h3 className="mt-4 max-w-sm text-[1.55rem] font-semibold leading-tight sm:mt-5 sm:text-[2.15rem]">
@@ -74,7 +74,7 @@ export function Contact() {
               href={company.map.searchUrl}
               target="_blank"
               rel="noreferrer"
-              className="border-ink bg-ink text-paper hover:border-brand-strong hover:bg-brand-strong sm:w-auto"
+              className="sm:w-auto"
             >
               Ver rotas
               <ArrowUpRight className="ml-2 h-4 w-4" aria-hidden="true" />

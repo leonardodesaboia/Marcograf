@@ -12,7 +12,7 @@ export function FinalCTA() {
   return (
     <Section className="pb-16 pt-0 sm:pb-24">
       <div className="overflow-hidden rounded-[1.35rem] border border-ink/10 bg-editorial-paper px-4 py-7 text-ink shadow-soft sm:rounded-[2.25rem] sm:px-10 sm:py-14">
-        <div className="mb-6 h-1 rounded-full bg-[linear-gradient(90deg,rgba(111,123,73,0.92)_0_26%,rgba(138,67,81,0.92)_26%_54%,rgba(184,139,52,0.94)_54%_78%,rgba(181,91,44,0.94)_78%_100%)]" aria-hidden="true" />
+        <div className="bg-cmyk-band mb-6 h-1 rounded-full" aria-hidden="true" />
         <div className="grid gap-8 lg:grid-cols-[0.72fr_0.28fr] lg:items-center">
           <div className="max-w-2xl">
             <h2 className="mt-4 font-display text-balance text-[1.72rem] font-semibold leading-tight tracking-tight sm:text-4xl">{company.finalCta.title}</h2>
@@ -23,7 +23,7 @@ export function FinalCTA() {
                 size="lg"
                 fullWidth
                 onClick={scrollToSection(`#${sectionIds.contact}`)}
-                className="border-ink bg-ink text-paper hover:border-brand-strong hover:bg-brand-strong sm:w-auto"
+                className="sm:w-auto"
               >
                 Solicitar orçamento
               </Button>

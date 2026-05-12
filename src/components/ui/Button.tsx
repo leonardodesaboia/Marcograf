@@ -23,7 +23,7 @@ type ButtonProps = AnchorProps | NativeButtonProps;
 
 const variants = {
   primary:
-    "border border-brand-strong bg-brand-strong text-white shadow-glow hover:border-ink hover:bg-ink focus-visible:ring-brand",
+    "border border-brand bg-brand text-white shadow-glow hover:border-brand-strong hover:bg-brand-strong focus-visible:ring-brand",
   secondary:
     "border border-border bg-surface text-ink hover:border-ink hover:bg-paper focus-visible:ring-ink",
   ghost: "text-ink hover:bg-ink/5 focus-visible:ring-ink",
