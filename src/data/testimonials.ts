@@ -12,15 +12,7 @@ export const testimonials = [
     text: "Qualidade total na realização de serviços gráficos.",
   },
   {
-    name: "Carlos Gouvea",
-    text: "Compromisso e qualidade.",
-  },
-  {
     name: "Jorismar Brito",
     text: "Uma empresa gráfica muito confiável.",
-  },
-  {
-    name: "Marcelo Stone",
-    text: "Atendimento excelente.",
   },
 ] as const;

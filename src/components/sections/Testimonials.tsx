@@ -9,6 +9,7 @@ import { Section } from "@/components/layout/Section";
 export function Testimonials() {
   const fullStars = Math.floor(company.rating);
   const partialStar = company.rating - fullStars;
+  const visibleTestimonials = testimonials;
 
   return (
     <Section id={sectionIds.testimonials} className="section-divider">
@@ -45,22 +46,24 @@ export function Testimonials() {
         </div>
 
         <div className="grid auto-rows-fr gap-3 sm:gap-4 md:grid-cols-2">
-          {testimonials.map((item, index) => (
+          {visibleTestimonials.map((item, index) => (
             <motion.article
               key={item.name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.35, delay: index * 0.04 }}
-              className={index === 0 ? "md:col-span-2" : undefined}
             >
-              <div
-                className={`flex h-full flex-col rounded-[1.15rem] border border-ink/10 px-4 py-5 shadow-soft sm:rounded-[1.75rem] sm:px-5 sm:py-6 ${
-                  index === 0 ? "bg-editorial-paper" : "bg-surface"
-                }`}
-              >
-                <Quote className="h-5 w-5 text-brand/75" aria-hidden="true" />
-                <p className="text-[0.98rem] leading-7 text-graphite">{item.text}</p>
+              <div className="flex h-full flex-col rounded-[1.15rem] border border-ink/10 bg-surface px-4 py-5 shadow-soft sm:rounded-[1.75rem] sm:px-5 sm:py-6">
+                <div className="flex items-center justify-between gap-3">
+                  <Quote className="h-5 w-5 text-brand" aria-hidden="true" />
+                  <div className="inline-flex items-center gap-1 text-yellow" aria-label="Avaliação máxima no Google">
+                    {Array.from({ length: 5 }).map((_, starIndex) => (
+                      <Star key={starIndex} className="h-3.5 w-3.5 fill-current" aria-hidden="true" />
+                    ))}
+                  </div>
+                </div>
+                <p className="mt-4 text-[0.98rem] leading-7 text-graphite">{item.text}</p>
                 <div className="mt-auto flex flex-col gap-2 border-t border-ink/8 pt-4 sm:flex-row sm:items-center sm:justify-between">
                   <p className="text-base font-semibold text-ink">{item.name}</p>
                   <div className="inline-flex items-center gap-2 text-[0.82rem] font-semibold uppercase tracking-[0.14em] text-brand sm:tracking-[0.2em]">
