@@ -48,20 +48,50 @@ export const company = {
       "A Marcograf reúne pré-impressão orientada, parque gráfico próprio e acabamento interno para conduzir projetos com mais previsibilidade.",
       "São mais de 25 anos atendendo materiais editoriais, corporativos, promocionais e de embalagem com especificação técnica e acompanhamento de produção.",
     ],
-    pillars: [
+    strengths: [
       {
-        title: "Missão",
+        label: "Cobertura",
+        title: "Linhas gráficas diferentes, leitura técnica consistente",
         description:
-          "Produzir materiais impressos com clareza técnica, consistência de execução e atendimento objetivo.",
+          "Editorial, papelaria, promocionais, embalagens e comunicação visual com a mesma régua de especificação.",
       },
       {
-        title: "Visão",
-        description: "Ser lembrada pela confiança operacional e pela qualidade do que entrega.",
+        label: "Decisão",
+        title: "Especificação pensada para o uso real da peça",
+        description:
+          "Formato, substrato, tiragem e acabamento são definidos pela aplicação, não por uma fórmula genérica.",
       },
       {
-        title: "Valores",
+        label: "Previsibilidade",
+        title: "Prazo tratado com viabilidade de produção",
         description:
-          "Critério técnico, compromisso com prazo e responsabilidade em cada etapa.",
+          "O alinhamento considera processo, volume e acabamento antes de prometer execução.",
+      },
+      {
+        label: "Proximidade",
+        title: "Base local para acompanhar de perto",
+        description:
+          "Fortaleza como ponto de contato comercial, retirada e acompanhamento mais próximo durante a produção.",
+      },
+    ],
+    operationBase: [
+      {
+        title: "Pré-impressão orientada",
+        description:
+          "O arquivo entra em conferência técnica para validar fechamento, especificações e ajustes antes de rodar.",
+        highlight: "Menos retrabalho na origem.",
+      },
+      {
+        title: "Produção própria",
+        description:
+          "A impressão acontece com controle interno de processo, sequência operacional e leitura mais precisa do projeto.",
+        highlight: "Mais consistência na execução.",
+      },
+      {
+        title: "Acabamento interno",
+        description:
+          "A finalização segue no mesmo fluxo produtivo para reduzir transições e proteger prazo e padrão de entrega.",
+        highlight: "Menos ruído até a liberação final.",
       },
     ],
   },

@@ -1,26 +1,32 @@
 export const differentials = [
   {
-    title: "Conferência técnica antes da produção",
-    description: "A demanda passa por validação de arquivo, especificação e aplicação antes de seguir.",
+    label: "Pré-impressão",
+    title: "O problema aparece antes de virar custo",
+    description: "Arquivo, especificação e aplicação são revisados antes da produção ganhar escala.",
   },
   {
-    title: "Produção e acabamento no mesmo fluxo",
-    description: "Mais controle entre impressão, acabamento e liberação final do material.",
+    label: "Fluxo interno",
+    title: "Produção e acabamento seguem sob o mesmo comando",
+    description: "A transição entre impressão, acabamento e liberação final acontece com mais controle operacional.",
   },
   {
-    title: "Atuação em diferentes linhas gráficas",
-    description: "Editorial, embalagens, promocionais, papelaria e comunicação visual com a mesma base operacional.",
+    label: "Amplitude",
+    title: "Uma estrutura que atende frentes gráficas diferentes",
+    description: "Editorial, embalagens, promocionais, papelaria e comunicação visual sem trocar o padrão técnico.",
   },
   {
-    title: "Especificação orientada por aplicação",
-    description: "Formato, substrato, tiragem e acabamento são avaliados conforme o uso real da peça.",
+    label: "Critério técnico",
+    title: "Cada peça nasce da aplicação, não do improviso",
+    description: "Formato, substrato, tiragem e acabamento são definidos conforme o uso real do material.",
   },
   {
-    title: "Prazos tratados com clareza",
-    description: "O orçamento considera volume, processo e acabamento para reduzir ruído na execução.",
+    label: "Previsibilidade",
+    title: "Prazo alinhado com capacidade real de entrega",
+    description: "O orçamento considera volume, processo e acabamento para evitar promessa frágil na execução.",
   },
   {
-    title: "Base local para acompanhamento próximo",
-    description: "Atendimento em Fortaleza para alinhamento comercial, retirada e acompanhamento de produção.",
+    label: "Fortaleza",
+    title: "Presença local para resposta mais próxima",
+    description: "Atendimento na cidade facilita alinhamento comercial, retirada e acompanhamento de produção.",
   },
 ] as const;

@@ -48,10 +48,17 @@ export function Differentials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.35, delay: index * 0.05 }}
-              className="h-full rounded-[1.15rem] border border-ink/10 bg-surface px-4 py-4 shadow-soft sm:rounded-[1.6rem] sm:px-5 sm:py-5"
+              className={`h-full rounded-[1.15rem] border px-4 py-4 shadow-soft sm:rounded-[1.6rem] sm:px-5 sm:py-5 ${
+                index % 3 === 0 ? "border-brand/15 bg-brand/5" : "border-ink/10 bg-surface"
+              }`}
             >
-              <p className="text-[0.76rem] font-semibold uppercase tracking-[0.16em] text-brand sm:tracking-[0.24em]">0{index + 1}</p>
-              <h3 className="mt-3 text-[1.08rem] font-semibold text-ink">{item.title}</h3>
+              <div className="flex items-center justify-between gap-3">
+                <p className="rounded-full border border-brand/15 bg-white/80 px-3 py-1 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-brand sm:tracking-[0.22em]">
+                  {item.label}
+                </p>
+                <p className="text-[0.82rem] font-semibold uppercase tracking-[0.16em] text-ink/28">0{index + 1}</p>
+              </div>
+              <h3 className="mt-4 text-[1.08rem] font-semibold leading-snug text-ink">{item.title}</h3>
               <p className="mt-2 text-[0.98rem] leading-7 text-muted">{item.description}</p>
             </motion.article>
           ))}
