@@ -97,7 +97,7 @@ export function Hero() {
                 <div className="absolute bottom-3 left-3 right-3 rounded-[1rem] border border-white/10 bg-ink/84 p-3.5 text-white backdrop-blur-xl sm:bottom-4 sm:left-4 sm:right-4 sm:rounded-[1.4rem] sm:p-4">
                   <div className="flex items-center gap-2 text-[0.74rem] font-semibold uppercase tracking-[0.18em] text-white/70">
                     <MapPin className="h-3.5 w-3.5 text-brand" aria-hidden="true" />
-                    <span>Marcograf • Fortaleza</span>
+                    <span>Marcograf • Fortaleza/CE</span>
                   </div>
                   <p className="mt-2 text-base font-semibold leading-snug sm:text-xl">Do arquivo ao acabamento.</p>
                   <p className="mt-2 text-[0.88rem] text-white/82 sm:text-[0.95rem]">Estrutura própria para produzir com mais consistência.</p>

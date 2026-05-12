@@ -1,26 +1,26 @@
 export const portfolioCases = [
   {
     category: "Embalagens",
-    title: "Linha de apresentação para produto",
-    description: "Referência visual para embalagens, tags e peças de exposição com foco em apresentação de marca.",
-    note: "Aplicações voltadas para apresentação, proteção e exposição de produto.",
+    title: "Embalagens e peças de apresentação",
+    description: "Caixas, tags, sacolas e materiais voltados para apresentação, proteção e exposição de produto.",
+    note: "Linha indicada para marca, exposição e acondicionamento.",
   },
   {
     category: "Editorial",
-    title: "Materiais de leitura e catálogo",
-    description: "Referência para livros, apostilas, catálogos e miolos com paginação e acabamento gráfico.",
-    note: "Projetos com foco em legibilidade, organização de conteúdo e acabamento.",
+    title: "Livros, apostilas e catálogos",
+    description: "Materiais de leitura com foco em paginação, organização de conteúdo e acabamento gráfico.",
+    note: "Aplicações voltadas para leitura, consulta e apresentação de conteúdo.",
   },
   {
     category: "Corporativo",
     title: "Papelaria e impressos institucionais",
-    description: "Referência para cartões, pastas, envelopes, blocos e peças comerciais de uso recorrente.",
-    note: "Peças pensadas para rotina comercial, apresentação institucional e uso recorrente.",
+    description: "Cartões, pastas, envelopes, blocos e peças de apoio para rotina comercial e apresentação institucional.",
+    note: "Linha indicada para uso recorrente e presença institucional.",
   },
   {
     category: "Comunicação visual",
-    title: "Peças para presença de marca",
-    description: "Referência para banners, adesivos, sinalização, materiais promocionais e ações de campanha.",
-    note: "Soluções voltadas para ambientação, visibilidade e presença de marca.",
+    title: "Sinalização e presença de marca",
+    description: "Banners, adesivos, sinalização e peças promocionais para ambientação, campanha e visibilidade.",
+    note: "Aplicações voltadas para circulação, destaque e presença visual.",
   },
 ] as const;

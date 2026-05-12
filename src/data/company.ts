@@ -35,7 +35,7 @@ export const company = {
   hero: {
     title: "Impressão com pré-impressão orientada, produção própria e acabamento no mesmo fluxo",
     description:
-      "A Marcograf atende materiais editoriais, corporativos, promocionais e de embalagem com mais controle técnico do arquivo à entrega.",
+      "A Marcograf atende materiais editoriais, corporativos, promocionais e de embalagem com leitura técnica e execução do arquivo à entrega.",
     highlights: [
       "Conferência técnica de arquivo",
       "Produção e acabamento no mesmo fluxo",
@@ -43,17 +43,17 @@ export const company = {
     ],
   },
   about: {
-    title: "Estrutura e critério técnico para produzir com mais segurança",
+    title: "Estrutura e leitura técnica para conduzir a produção com mais clareza",
     paragraphs: [
-      "A Marcograf reúne pré-impressão orientada, parque gráfico próprio e acabamento interno para conduzir projetos com mais previsibilidade.",
-      "São mais de 25 anos atendendo materiais editoriais, corporativos, promocionais e de embalagem com especificação técnica e acompanhamento de produção.",
+      "A Marcograf reúne pré-impressão orientada, parque gráfico próprio e acabamento interno para conduzir projetos com fluxo mais claro.",
+      "São mais de 25 anos atendendo materiais editoriais, corporativos, promocionais e de embalagem com especificação consistente e acompanhamento de produção.",
     ],
     strengths: [
       {
         label: "Cobertura",
         title: "Linhas gráficas diferentes, leitura técnica consistente",
         description:
-          "Editorial, papelaria, promocionais, embalagens e comunicação visual com a mesma régua de especificação.",
+          "Editorial, papelaria, promocionais, embalagens e comunicação visual com o mesmo padrão de especificação.",
       },
       {
         label: "Decisão",
@@ -65,13 +65,13 @@ export const company = {
         label: "Previsibilidade",
         title: "Prazo tratado com viabilidade de produção",
         description:
-          "O alinhamento considera processo, volume e acabamento antes de prometer execução.",
+          "O alinhamento considera processo, volume e acabamento antes de confirmar a execução.",
       },
       {
         label: "Proximidade",
         title: "Base local para acompanhar de perto",
         description:
-          "Fortaleza como ponto de contato comercial, retirada e acompanhamento mais próximo durante a produção.",
+          "Fortaleza/CE como base para contato comercial, retirada e acompanhamento mais próximo da produção.",
       },
     ],
     operationBase: [
@@ -84,7 +84,7 @@ export const company = {
       {
         title: "Produção própria",
         description:
-          "A impressão acontece com controle interno de processo, sequência operacional e leitura mais precisa do projeto.",
+          "A impressão acontece com gestão interna de processo, sequência operacional e leitura mais precisa do projeto.",
         highlight: "Mais consistência na execução.",
       },
       {
@@ -98,7 +98,7 @@ export const company = {
   process: {
     title: "Como a demanda entra, é validada e segue para produção",
     subtitle:
-      "Um fluxo objetivo para analisar especificação, orientar o arquivo e produzir com mais previsibilidade.",
+      "Um fluxo objetivo para analisar a demanda, orientar o arquivo e encaminhar a produção com menos ruído.",
     steps: [
       {
         title: "Briefing e material",
@@ -133,9 +133,9 @@ export const company = {
       "Atendimento com estrutura própria para editorial, embalagens, papelaria, publicidade e comunicação visual.",
   },
   finalCta: {
-    title: "Precisa validar especificação, prazo e acabamento com mais segurança?",
+    title: "Precisa alinhar especificação, prazo e acabamento com mais clareza?",
     description:
-      "Conte com a Marcograf para conduzir o projeto com mais critério técnico do arquivo à produção.",
+      "Conte com a Marcograf para conduzir o projeto com leitura técnica e acompanhamento do arquivo à produção.",
   },
   seo: {
     title: "Marcograf Indústria Gráfica | Gráfica em Fortaleza",

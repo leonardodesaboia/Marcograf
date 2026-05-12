@@ -49,9 +49,8 @@ export function Differentials() {
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.35, delay: index * 0.05 }}
               className={`h-full rounded-[1.15rem] border px-4 py-4 shadow-soft sm:rounded-[1.6rem] sm:px-5 sm:py-5 ${
-                index % 3 === 0 ? "border-brand/15 bg-brand/5" : "border-ink/10 bg-surface"
-              }`}
-            >
+                index % 2 === 0 ? "border-brand/15 bg-brand/5" : "border-ink/10 bg-surface"
+              }`}            >
               <div className="flex items-center justify-between gap-3">
                 <p className="rounded-full border border-brand/15 bg-white/80 px-3 py-1 text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-brand sm:tracking-[0.22em]">
                   {item.label}
